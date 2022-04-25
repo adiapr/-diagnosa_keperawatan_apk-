@@ -418,7 +418,7 @@
                 </div>
                 <hr>
                 <div id="Composmentis">
-                    <b>6 Visual Analogue Scale (VAS)</b><br>
+                    <b>Visual Analogue Scale (VAS)</b><br>
                     <input type="radio" name="vas" value="Tidak Nyeri (0-4MM)"> Tidak Nyeri (0-4MM) <br>
                     <input type="radio" name="vas" value="Nyeri Ringan (5MM-44MM)"> Nyeri Ringan (5MM-44MM) <br>
                     <input type="radio" name="vas" value="Nyeri Sedang (45MM-74MM)"> Nyeri Sedang (45MM-74MM) <br>
@@ -426,7 +426,7 @@
                 </div>
                 <div id="NonComposmentis">
                     <hr>
-                    <b>6 Non Verbal Paint Scale (NVAS)</b><hr>
+                    <b> Non Verbal Paint Scale (NVAS)</b><hr>
                     Wajah<br>
                     <input type="radio" name="wajah" value="Tidak ada ekspresi atau senyum"> Tidak ada ekspresi atau senyum<br>
                     <input type="radio" name="wajah" value="sesekali meringis, mengeluarkan airmata, mengerutkan dahi"> sesekali meringis, mengeluarkan airmata, mengerutkan dahi <br>
@@ -456,7 +456,7 @@
                 <input type="radio" name="fisiologi2" value="Dilatasi pupil, berkeringat, memerah">  Dilatasi pupil, berkeringat, memerah <br>
                 <input type="radio" name="fisiologi2" value="Banyak mengeluarkan keringat, pucat">  Banyak mengeluarkan keringat, pucat <hr>
                 </div>
-                8. Data Tambahan Nyeri
+                 Data Tambahan Nyeri
                 <table width="100%">
                     <tr>
                         <td>
@@ -467,7 +467,7 @@
 
 
                         </td>
-                        <td><input type="checkbox" name="tambahan_nyeri[]" value="Tidak mampu menuntaskan aktivitas"> 7. Tidak mampu menuntaskan aktivitas</td>
+                        <td><input type="checkbox" name="tambahan_nyeri[]" value="Tidak mampu menuntaskan aktivitas"> Tidak mampu menuntaskan aktivitas</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="tambahan_nyeri[]" value="Gelisah">  Gelisah</td>
@@ -550,37 +550,37 @@
                 {{-- --------------------------------------------------------------------------------------- --}}
                 <br>
                 <b>Aktivitas</b><br>
-                <input type="checkbox" name="aktivitas[]" value="Mengeluh Lelah"> 11. Mengeluh Lelah<br>
-                <input type="checkbox" name="aktivitas[]" value="Tampak Lesu"> 12. Tampak Lesu<br>
-                <input type="checkbox" name="aktivitas[]" value="Merasa energi tidak pulih walaupun lelah"> 13. Merasa energi tidak pulih walaupun lelah<br>
-                <input type="checkbox" name="aktivitas[]" value="Tidak mampu mempertahankan aktivitas rutin"> 14. Tidak mampu mempertahankan aktivitas rutin<br>
-                <input type="checkbox" name="aktivitas[]" value="Merasa kurang tenaga"> 15. Merasa kurang tenaga<br>
-                <input type="checkbox" name="aktivitas[]" value="Mengeluh sulit menggerakkan ekstremitas"> 16. Mengeluh sulit menggerakkan ekstremitas<br>
-                <input type="checkbox" name="aktivitas[]" value="Kekuatan otot menurun"> 17. Kekuatan otot menurun <br>
-                <input type="checkbox" name="aktivitas[]" value="Rentang gerak(rom) menurun"> 18. Rentang gerak(rom) menurun<br>
+                <input type="checkbox" name="aktivitas[]" value="Mengeluh Lelah">  Mengeluh Lelah<br>
+                <input type="checkbox" name="aktivitas[]" value="Tampak Lesu">  Tampak Lesu<br>
+                <input type="checkbox" name="aktivitas[]" value="Merasa energi tidak pulih walaupun lelah"> Merasa energi tidak pulih walaupun lelah<br>
+                <input type="checkbox" name="aktivitas[]" value="Tidak mampu mempertahankan aktivitas rutin"> Tidak mampu mempertahankan aktivitas rutin<br>
+                <input type="checkbox" name="aktivitas[]" value="Merasa kurang tenaga"> Merasa kurang tenaga<br>
+                <input type="checkbox" name="aktivitas[]" value="Mengeluh sulit menggerakkan ekstremitas">  Mengeluh sulit menggerakkan ekstremitas<br>
+                <input type="checkbox" name="aktivitas[]" value="Kekuatan otot menurun"> Kekuatan otot menurun <br>
+                <input type="checkbox" name="aktivitas[]" value="Rentang gerak(rom) menurun">  Rentang gerak(rom) menurun<br>
                 <br>
                 <b>Tanda gejala lainnya</b><br>
-                <input type="checkbox" name="gejalalain[]" value="Gangguan Sirkulasi"> 19. Gangguan Sirkulasi<br>
-                <input type="checkbox" name="gejalalain[]" value="Gangguan Pernapasan"> 19. Gangguan Pernapasan<br>
-                <input type="checkbox" name="gejalalain[]" value="Ketidakbugaran Fisik"> 20. Ketidakbugaran Fisik<br>
-                <input type="checkbox" name="gejalalain[]" value="Riwayat Intoleransi Sebelumnya"> 21. Riwayat Intoleransi Sebelumnya<br>
-                <input type="checkbox" name="gejalalain[]" value="Tidak Berpengalaman Dengan Suatu Aktivitas"> 22. Tidak Berpengalaman Dengan Suatu Aktivitas<br>
+                <input type="checkbox" name="gejalalain[]" value="Gangguan Sirkulasi"> Gangguan Sirkulasi<br>
+                <input type="checkbox" name="gejalalain[]" value="Gangguan Pernapasan"> Gangguan Pernapasan<br>
+                <input type="checkbox" name="gejalalain[]" value="Ketidakbugaran Fisik"> Ketidakbugaran Fisik<br>
+                <input type="checkbox" name="gejalalain[]" value="Riwayat Intoleransi Sebelumnya"> Riwayat Intoleransi Sebelumnya<br>
+                <input type="checkbox" name="gejalalain[]" value="Tidak Berpengalaman Dengan Suatu Aktivitas"> Tidak Berpengalaman Dengan Suatu Aktivitas<br>
                 <br>
                 <b>Pola Istirahat dan Tidur</b><br>
-                <input type="checkbox" name="polaistirahat[]" value="Mengeluh sulit tidur"> 23. Mengeluh sulit tidur<br>
-                <input type="checkbox" name="polaistirahat[]" value="Mengeluh sering terjaga"> 24. Mengeluh sering terjaga<br>
-                <input type="checkbox" name="polaistirahat[]" value="Mengeluh tidak puas tidur"> 25. Mengeluh tidak puas tidur<br>
-                <input type="checkbox" name="polaistirahat[]" value="Mengeluh pola tidur berubah"> 26. Mengeluh pola tidur berubah<br>
-                <input type="checkbox" name="polaistirahat[]" value="Mengeluh istirahat tidak cukup"> 27. Mengeluh istirahat tidak cukup<br>
-                <input type="checkbox" name="polaistirahat[]" value="Tidak ada keluhan"> 28. Tidak ada keluhan<br>
+                <input type="checkbox" name="polaistirahat[]" value="Mengeluh sulit tidur"> Mengeluh sulit tidur<br>
+                <input type="checkbox" name="polaistirahat[]" value="Mengeluh sering terjaga"> Mengeluh sering terjaga<br>
+                <input type="checkbox" name="polaistirahat[]" value="Mengeluh tidak puas tidur"> Mengeluh tidak puas tidur<br>
+                <input type="checkbox" name="polaistirahat[]" value="Mengeluh pola tidur berubah"> Mengeluh pola tidur berubah<br>
+                <input type="checkbox" name="polaistirahat[]" value="Mengeluh istirahat tidak cukup"> Mengeluh istirahat tidak cukup<br>
+                <input type="checkbox" name="polaistirahat[]" value="Tidak ada keluhan"> Tidak ada keluhan<br>
                 <br>
                 <b>Nutrisi dan cairan</b><br>
                 Keluhan <br>
-                <input type="checkbox" name="keluhan[]" value="Mual"> 29. Mual<br>
-                <input type="checkbox" name="keluhan[]" value="Muntah"> 30. Muntah<br>
-                <input type="checkbox" name="keluhan[]" value="Tidak berniat makan"> 31. Tidak berniat makan<br>
-                <input type="checkbox" name="keluhan[]" value="Sulit Menelan"> 32. Sulit Menelan<br>
-                <input type="checkbox" name="keluhan[]" value="Tidak ada keluhan"> 33. Tidak ada keluhan<br>
+                <input type="checkbox" name="keluhan[]" value="Mual"> Mual<br>
+                <input type="checkbox" name="keluhan[]" value="Muntah"> Muntah<br>
+                <input type="checkbox" name="keluhan[]" value="Tidak berniat makan"> Tidak berniat makan<br>
+                <input type="checkbox" name="keluhan[]" value="Sulit Menelan"> Sulit Menelan<br>
+                <input type="checkbox" name="keluhan[]" value="Tidak ada keluhan"> Tidak ada keluhan<br>
                 <table width="100%">
                     <tr>
                         <td>TB</td>
@@ -610,25 +610,25 @@
                         </td>
                     </tr>
                 </table><br>
-                34,35,36. Interpretasi : <br>
+                Interpretasi : <br>
                 <input type="text" name="interpretasi" readonly class="form-control input-sm"><br>
                 <br>
-                37. Peristaltik Usus<br>
+                 Peristaltik Usus<br>
                 <input type="radio" name="peristaltik" value="Tidak ada"> Tidak ada<br>
                 <input type="radio" name="peristaltik" value="Hipoaktif"> Hipoaktif<br>
                 <input type="radio" name="peristaltik" value="Hiperaktif"> Hiperaktif<br>
                 <br>
                 Membran Mukosa<br>
-                <input type="radio" name="membranmukosa"  value="Tidak ada"> 38. Lembab<br>
-                <input type="radio" name="membranmukosa"  value="Kering"> 39. Kering<br>
+                <input type="radio" name="membranmukosa"  value="Tidak ada"> Lembab<br>
+                <input type="radio" name="membranmukosa"  value="Kering">  Kering<br>
                  <br>
                 Edema<br>
-                <input type="radio" name="edema"  value="Ya"> 40. Ya<br>
-                <input type="radio" name="edema"  value="Tidak"> 41. Tidak<br>
+                <input type="radio" name="edema"  value="Ya"> Ya<br>
+                <input type="radio" name="edema"  value="Tidak">  Tidak<br>
                 <br>
                 Dehidrasi<br>
-                <input type="radio" name="dehidrasi"  value="Ya"> 43. Ya<br>
-                <input type="radio" name="dehidrasi"  value="Tidak"> 43. Tidak<br>
+                <input type="radio" name="dehidrasi"  value="Ya"> Ya<br>
+                <input type="radio" name="dehidrasi"  value="Tidak">Tidak<br>
                 <br>
 
 
@@ -647,74 +647,74 @@
                 <BR>
 
                 <b>Tanda gejalanya</b><br>
-                <input type="checkbox" name="tandagejala[]" value="Nadi teraba lemah"> 46. Nadi teraba lemah<br>
-                <input type="checkbox" name="tandagejala[]" value="Tekanan nadi menyempit"> 47. Tekanan nadi menyempit<br>
-                <input type="checkbox" name="tandagejala[]" value="Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan"> 48. Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan<br>
-                <input type="checkbox" name="tandagejala[]" value="Mengungkapkan flatus tidak ada"> 49. Mengungkapkan flatus tidak ada<br>
-                <input type="checkbox" name="tandagejala[]" value="Asupan makanan dan cairan adekuat untuk kebutuhan harian"> 50. Asupan makanan dan cairan adekuat untuk kebutuhan harian<br>
-                <input type="checkbox" name="tandagejala[]" value="Peningkatan kebutuhan metabolisme"> 51. Peningkatan kebutuhan metabolisme<br>
-                <input type="checkbox" name="tandagejala[]" value="Penurunan sirkulasi gastroiintestinal"> 52. Penurunan sirkulasi gastroiintestinal<br>
-                <input type="checkbox" name="tandagejala[]" value="Kehilangan cairan secara aktif"> 53. Kehilangan cairan secara aktif<br>
-                <input type="checkbox" name="tandagejala[]" value="Kekurangan intake cairan"> 53. Kekurangan intake cairan<br>
-                <input type="checkbox" name="tandagejala[]" value="Kegagalan mekanisme regasi"> 54. Kegagalan mekanisme regulasi<br>
-                <input type="checkbox" name="tandagejala[]" value="Afreis"> 56. Afereis<br>
-                <input type="checkbox" name="tandagejala[]" value="Asites"> 56. Asites<br>
-                <input type="checkbox" name="tandagejala[]" value="Luka bakar"> 56. Luka bakar<br>
-                <input type="checkbox" name="tandagejala[]" value="Pembedahan mayor"> 56.  Pembedahan mayor<br>
-                <input type="checkbox" name="tandagejala[]" value="Obstruksi intestinal"> 66. Obstruksi intestinal<br>
-                <input type="checkbox" name="tandagejala[]" value="Difusi Ginjal"> 57. Difusi Ginjal<br>
-                <input type="checkbox" name="tandagejala[]" value="Disfusi Regulasi endokrin"> 57. Disfusi Regulasi endokrin<br>
-                <input type="checkbox" name="tandagejala[]" value="Hipoksemia"> 58. Hipoksemia<br>
-                <input type="checkbox" name="tandagejala[]" value="Hipoksia"> 58. Hipoksia<br>
-                <input type="checkbox" name="tandagejala[]" value="Hipotensi"> 58.  Hipotensi<br>
-                <input type="checkbox" name="tandagejala[]" value="Sepsis"> 58. Sepsis <br>
-                <input type="checkbox" name="tandagejala[]" value="SIRS"> 58. SIRS<br>
-                <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mencerna makanan"> 59. Ketidakmampuan mencerna makanan<br>
-                <input type="checkbox" name="tandagejala[]" value="Financial tidak mencukupi"> 60. Financial tidak mencukupi<br>
-                <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mengabsorbsi nutrien"> 60. FInancial tidak mencukupi<br>
-                <input type="checkbox" name="tandagejala[]" value="Stress"> 61. Stress<br>
-                <input type="checkbox" name="tandagejala[]" value="Batuk sebelum menelan"> 62. Batuk sebelum menelan<br>
-                <input type="checkbox" name="tandagejala[]" value="Batuk setelah makan dan minum"> 62. Batuk setelah makan dan minum<br>
-                <input type="checkbox" name="tandagejala[]" value="Makan tertinggal di rongga mulut"> 63. Makan tertinggal di rongga mulut<br>
-                <input type="checkbox" name="tandagejala[]" value="Tersedak"> 63. Tersedak<br>
-                <input type="checkbox" name="tandagejala[]" value="Efek agen farmakologis"> 64. Efek agen farmakologis<br>
-                <input type="checkbox" name="tandagejala[]" value="Efek prosedur pembedahan"> 65. Efek prosedur pembedahan<br>
-                <input type="checkbox" name="tandagejala[]" value="Refulks Gastroiintestinal"> 66. Refulks Gastroiintestinal<br>
-                <input type="checkbox" name="tandagejala[]" value="Infeksi Gastroiintestinal"> 66. Infeksi Gastroiintestinal<br>
-                <input type="checkbox" name="tandagejala[]" value="Kurangnya sanitasi pada persiapan makanan"> 67. Kurangnya sanitasi pada persiapan makanan<br>
-                <input type="checkbox" name="tandagejala[]" value="Gangguan absorbsi cairan"> 68. Gangguan absorbsi cairan<br>
-                <input type="checkbox" name="tandagejala[]" value="Status hipermetabolik"> 68. Status hipermetabolik<br>
-                <input type="checkbox" name="tandagejala[]" value="Evaporasi"> 68. Evaporasi<br>
+                <input type="checkbox" name="tandagejala[]" value="Nadi teraba lemah"> Nadi teraba lemah<br>
+                <input type="checkbox" name="tandagejala[]" value="Tekanan nadi menyempit"> Tekanan nadi menyempit<br>
+                <input type="checkbox" name="tandagejala[]" value="Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan">  Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan<br>
+                <input type="checkbox" name="tandagejala[]" value="Mengungkapkan flatus tidak ada">  Mengungkapkan flatus tidak ada<br>
+                <input type="checkbox" name="tandagejala[]" value="Asupan makanan dan cairan adekuat untuk kebutuhan harian"> Asupan makanan dan cairan adekuat untuk kebutuhan harian<br>
+                <input type="checkbox" name="tandagejala[]" value="Peningkatan kebutuhan metabolisme">   Peningkatan kebutuhan metabolisme<br>
+                <input type="checkbox" name="tandagejala[]" value="Penurunan sirkulasi gastroiintestinal">  Penurunan sirkulasi gastroiintestinal<br>
+                <input type="checkbox" name="tandagejala[]" value="Kehilangan cairan secara aktif">   Kehilangan cairan secara aktif<br>
+                <input type="checkbox" name="tandagejala[]" value="Kekurangan intake cairan">  Kekurangan intake cairan<br>
+                <input type="checkbox" name="tandagejala[]" value="Kegagalan mekanisme regasi">  Kegagalan mekanisme regulasi<br>
+                <input type="checkbox" name="tandagejala[]" value="Afreis">  Afereis<br>
+                <input type="checkbox" name="tandagejala[]" value="Asites">  Asites<br>
+                <input type="checkbox" name="tandagejala[]" value="Luka bakar">   Luka bakar<br>
+                <input type="checkbox" name="tandagejala[]" value="Pembedahan mayor">   Pembedahan mayor<br>
+                <input type="checkbox" name="tandagejala[]" value="Obstruksi intestinal">  Obstruksi intestinal<br>
+                <input type="checkbox" name="tandagejala[]" value="Difusi Ginjal">  Difusi Ginjal<br>
+                <input type="checkbox" name="tandagejala[]" value="Disfusi Regulasi endokrin">  Disfusi Regulasi endokrin<br>
+                <input type="checkbox" name="tandagejala[]" value="Hipoksemia">   Hipoksemia<br>
+                <input type="checkbox" name="tandagejala[]" value="Hipoksia">  Hipoksia<br>
+                <input type="checkbox" name="tandagejala[]" value="Hipotensi">   Hipotensi<br>
+                <input type="checkbox" name="tandagejala[]" value="Sepsis">   Sepsis <br>
+                <input type="checkbox" name="tandagejala[]" value="SIRS">   SIRS<br>
+                <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mencerna makanan">  Ketidakmampuan mencerna makanan<br>
+                <input type="checkbox" name="tandagejala[]" value="Financial tidak mencukupi">  Financial tidak mencukupi<br>
+                <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mengabsorbsi nutrien">  FInancial tidak mencukupi<br>
+                <input type="checkbox" name="tandagejala[]" value="Stress">   Stress<br>
+                <input type="checkbox" name="tandagejala[]" value="Batuk sebelum menelan">  Batuk sebelum menelan<br>
+                <input type="checkbox" name="tandagejala[]" value="Batuk setelah makan dan minum">  Batuk setelah makan dan minum<br>
+                <input type="checkbox" name="tandagejala[]" value="Makan tertinggal di rongga mulut">  Makan tertinggal di rongga mulut<br>
+                <input type="checkbox" name="tandagejala[]" value="Tersedak">   Tersedak<br>
+                <input type="checkbox" name="tandagejala[]" value="Efek agen farmakologis">  Efek agen farmakologis<br>
+                <input type="checkbox" name="tandagejala[]" value="Efek prosedur pembedahan">  Efek prosedur pembedahan<br>
+                <input type="checkbox" name="tandagejala[]" value="Refulks Gastroiintestinal">  Refulks Gastroiintestinal<br>
+                <input type="checkbox" name="tandagejala[]" value="Infeksi Gastroiintestinal">   Infeksi Gastroiintestinal<br>
+                <input type="checkbox" name="tandagejala[]" value="Kurangnya sanitasi pada persiapan makanan">  Kurangnya sanitasi pada persiapan makanan<br>
+                <input type="checkbox" name="tandagejala[]" value="Gangguan absorbsi cairan">   Gangguan absorbsi cairan<br>
+                <input type="checkbox" name="tandagejala[]" value="Status hipermetabolik"> Status hipermetabolik<br>
+                <input type="checkbox" name="tandagejala[]" value="Evaporasi">   Evaporasi<br>
                 <br>
                 <b>Respirasi dan Sirkulasi</b> <br>
                 Pola nafas : <br>
                 <input type="checkbox" name="polanafas[]" value="Apnea atau tidak adanya pernafasan"> Apnea atau tidak adanya pernafasan<br>
-                <input type="checkbox" name="polanafas[]" value="Eupnea atau pernafasan normal"> 69. Eupnea atau pernafasan normal<br>
-                <input type="checkbox" name="polanafas[]" value="Dypsnea atau Sesak nafas"> 70. Dypsnea atau Sesak nafas<br>
-                <input type="checkbox" name="polanafas[]" value="Ortopnea atau sulit bernafas saat berbaring"> 71. Ortopnea atau sulit bernafas saat berbaring<br>
-                <input type="checkbox" name="polanafas[]" value="Paroxymal nocturnal dyspnea(PND) atau Sesak pada malam hari"> 72. Paroxymal nocturnal dyspnea(PND) atau Sesak pada malam hari<br>
+                <input type="checkbox" name="polanafas[]" value="Eupnea atau pernafasan normal"> Eupnea atau pernafasan normal<br>
+                <input type="checkbox" name="polanafas[]" value="Dypsnea atau Sesak nafas"> Dypsnea atau Sesak nafas<br>
+                <input type="checkbox" name="polanafas[]" value="Ortopnea atau sulit bernafas saat berbaring">  Ortopnea atau sulit bernafas saat berbaring<br>
+                <input type="checkbox" name="polanafas[]" value="Paroxymal nocturnal dyspnea(PND) atau Sesak pada malam hari">  Paroxymal nocturnal dyspnea(PND) atau Sesak pada malam hari<br>
                 <input type="checkbox" name="polanafas[]" value="Hiperpnea atau peningkatan kedalaman pernafasan"> Hiperpnea atau peningkatan kedalaman pernafasan<br>
-                <input type="checkbox" name="polanafas[]" value="Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya"> 95. Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya<br>
+                <input type="checkbox" name="polanafas[]" value="Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya">  Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya<br>
                 <input type="checkbox" name="polanafas[]" value="Hipoventilasi atau penurunan kecepatan/kedalaman/keduanya"> Hipoventilasi atau penurunan kecepatan/kedalaman/keduanya<br>
-                <input type="checkbox" name="polanafas[]" value="Biot atau pernafasan dalam dan dangkal disertai apnea"> 74. Biot atau pernafasan dalam dan dangkal disertai apnea<br>
-                <input type="checkbox" name="polanafas[]" value="Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur"> 74. Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur<br>
+                <input type="checkbox" name="polanafas[]" value="Biot atau pernafasan dalam dan dangkal disertai apnea">  Biot atau pernafasan dalam dan dangkal disertai apnea<br>
+                <input type="checkbox" name="polanafas[]" value="Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur">  Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur<br>
                 <br>
                 <br>
-                75. Batuk<br>
+                 Batuk<br>
                 <input type="radio" name="batuk"  value="Efektif"> Efektif <br>
                 <input type="radio" name="batuk"  value="Tidak Efektif"> Tidak Efektif <br>
                 <input type="radio" name="batuk"  value="Tidak mampu batuk"> Tidak mampu batuk <br>
                 <input type="radio" name="batuk"  value="Tidak batuk"> Tidak batuk<br>
                 <br>
-                76. Sputum<br>
+                  Sputum<br>
                 <input type="radio" name="sputum"  value="Berlebih"> Berlebih <br>
                 <input type="radio" name="sputum"  value="Tidak Berlebih"> Tidak Berlebih<br>
                 <br>
-                77. Penggunaan Otot Bantu Nafas :<br>
+                  Penggunaan Otot Bantu Nafas :<br>
                 <input type="radio" name="obn"  value="Ya"> Ya <br>
                 <input type="radio" name="obn"  value="Tidak"> Tidak<br>
                 <br>
-                79. Suara Nafas :<br>
+                  Suara Nafas :<br>
                 <input type="radio" name="suaranafas"  value="Vesikuler"> Vesikuler <br>
                 <input type="radio" name="suaranafas"  value="Tracheal"> Tracheal <br>
                 <input type="radio" name="suaranafas"  value="Ronki"> Ronki <br>
@@ -723,7 +723,7 @@
                 <input type="radio" name="suaranafas"  value="Bronkhial"> Bronkhial <br>
                 <input type="radio" name="suaranafas"  value="Wheezing"> Wheezing<br>
                 <br>
-                78. Irama Jantung :<br>
+                  Irama Jantung :<br>
                 <input type="radio" name="jantung"  value="Reguler"> Reguler <br>
                 <input type="radio" name="jantung"  value="Irreguler"> Irreguler<br>
                 <br>
@@ -736,17 +736,17 @@
                 <input type="radio" name="warnakulit"  value="Merah"> Merah<br>
                 <br>
                 CRT :<br>
-                <input type="radio" name="crt"  value="< 3 Detik"> 84. < 3 Detik <br>
-                <input type="radio" name="crt"  value="> 3 Detik"> 85. > 3 Detik<br>
+                <input type="radio" name="crt"  value="< 3 Detik">   < 3 Detik <br>
+                <input type="radio" name="crt"  value="> 3 Detik">   > 3 Detik<br>
                 <br>
-                86. Reflek Hepatojuglar :<br>
+                 Reflek Hepatojuglar :<br>
                 <input type="radio" name="hepatojuglar"  value="Positif"> Positif<br>
                 <input type="radio" name="hepatojuglar"  value="Negatif"> Negatif<br>
                 <br>
 
                 <table width="100%">
                     <tr valign="top">
-                        <td>87. PO2</td>
+                        <td>  PO2</td>
                         <td> <input type="radio" name="po2"  value="Meningkat">Meningkat <br>
                             <input type="radio" name="po2"  value="Menurun">Menurun <br>
                             <input type="radio" name="po2"  value="Normal">Normal<hr>
@@ -759,7 +759,7 @@
                         </td>
                     </tr>
                     <tr valign="top">
-                        <td>88. PCO2</td>
+                        <td>  PCO2</td>
                         <td> <input type="radio" name="pco2"  value="Meningkat">Meningkat <br>
                             <input type="radio" name="pco2"  value="Menurun">Menurun <br>
                             <input type="radio" name="pco2"  value="Normal">Normal<hr>
@@ -772,7 +772,7 @@
                         </td>
                     </tr>
                     <tr valign="top">
-                        <td>89. pH</td>
+                        <td>  pH</td>
                         <td> <input type="radio" name="ph"  value="Meningkat"> Meningkat <br>
                             <input type="radio" name="ph"  value="Menurun"> Menurun <br>
                             <input type="radio" name="ph"  value="Normal"> Normal<hr>
@@ -785,7 +785,7 @@
                         </td>
                     </tr>
                     <tr valign="top">
-                        <td>92. Sat O2</td>
+                        <td>  Sat O2</td>
                         <td>
                             <input type="radio" name="sato2"  value="Menurun"> Menurun <br>
                             <input type="radio" name="sato2"  value="Normal"> Normal<hr>
@@ -799,7 +799,7 @@
                         </td>
                     </tr>
                     <tr valign="top">
-                        <td>90. JVP</td>
+                        <td>  JVP</td>
                         <td colspan="2">
                             <input type="radio" name="jvp"  value="Meningkat"> Meningkat <br>
                             <input type="radio" name="jvp"  value="Menurun"> Menurun <br>
@@ -807,7 +807,7 @@
                         <td>                    </td>
                     </tr>
                     <tr valign="top">
-                        <td>91. CVP</td>
+                        <td>  CVP</td>
 
                         <td colspan="2">
                             <input type="radio" name="cvp"  value="Meningkat"> Meningkat <br>
@@ -816,7 +816,7 @@
                         </td>
                     </tr>
                     <tr valign="top">
-                        <td>93. V.Tidal</td>
+                        <td> Volume Tidal</td>
                         <td>
                             <input type="radio" name="vtidal"  value="Meningkat"> Meningkat <br>
                             <input type="radio" name="vtidal"  value="Menurun"> Menurun <br>
@@ -826,51 +826,51 @@
                     <tr valign="top">
                         <td>Hematokrit</td>
                         <td>
-                            <input type="radio" name="hematokrit"  value="Meningkat"> 10. Meningkat <br>
+                            <input type="radio" name="hematokrit"  value="Meningkat"> Meningkat <br>
                             <input type="radio" name="hematokrit"  value="Menurun"> Menurun <br>
                             <input type="radio" name="hematokrit"  value="Normal"> Normal<hr>
                         </td>
                     </tr>
                 </table>
                 <br>
-                94. Ejection Fration <br>
+                  Ejection Fration <br>
                 <input type="number" name="fration" class="form-control input-sm">
                 <br> <br>
 
                 <b>Tanda dan Gejala Lainnya</b> <br>
-                <input type="checkbox" name="gejalalain95[]" value="Peningkatan tekanan intragastrik"> 95. Peningkatan tekanan intragastrik <br>
-                <input type="checkbox" name="gejalalain95[]" value="Perlambatan pengosongan lambung"> 96. Perlambatan pengosongan lambung <br>
-                <input type="checkbox" name="gejalalain95[]" value="Peningkatan residu lambung"> 97. Peningkatan residu lambung <br>
-                <input type="checkbox" name="gejalalain95[]" value="Terpasang nasogastrik"> 98. Terpasang nasogastrik<br>
-                <input type="checkbox" name="gejalalain95[]" value="Terpasang Trakeostomi"> 98. Terpasang Trakeostomi<br>
-                <input type="checkbox" name="gejalalain95[]" value="Terpasang endotracheal tube"> 98. Terpasang endotracheal tube<br>
-                <input type="checkbox" name="gejalalain95[]" value="Perubahan afterload (oliguria,nadi perifer teraba lemah)"> 99. Perubahan afterload (oliguria,nadi perifer teraba lemah)<br>
-                <input type="checkbox" name="gejalalain95[]" value="Perubahan preload (distensi vena jugularis, hepatomegali)"> 100. Perubahan preload (distensi vena jugularis, hepatomegali)<br>
-                <input type="checkbox" name="gejalalain95[]" value="Perubahan irama jantung (gambaran ekg aritmia atau gangguan konduksi)"> 101. Perubahan irama jantung (gambaran ekg aritmia atau gangguan konduksi)<br>
-                <input type="checkbox" name="gejalalain95[]" value="perubahan kontaktilitas (terdengar suara jantung s3 dan/atau s4)"> 102. perubahan kontaktilitas (terdengar suara jantung s3 dan/atau s4)<br>
-                <input type="checkbox" name="gejalalain95[]" value="Hiperglikemia"> 103. Hiperglikemia<br>
-                <input type="checkbox" name="gejalalain95[]" value="Hipertensi"> 103. Hipertensi<br>
-                <input type="checkbox" name="gejalalain95[]" value="gaya hidup kurang gerak"> 103. gaya hidup kurang gerak<br>
-                <input type="checkbox" name="gejalalain95[]" value="prosedur endovaskular"> 103. prosedur endovaskular<br>
+                <input type="checkbox" name="gejalalain95[]" value="Peningkatan tekanan intragastrik">   Peningkatan tekanan intragastrik <br>
+                <input type="checkbox" name="gejalalain95[]" value="Perlambatan pengosongan lambung">  Perlambatan pengosongan lambung <br>
+                <input type="checkbox" name="gejalalain95[]" value="Peningkatan residu lambung"> Peningkatan residu lambung <br>
+                <input type="checkbox" name="gejalalain95[]" value="Terpasang nasogastrik">  Terpasang nasogastrik<br>
+                <input type="checkbox" name="gejalalain95[]" value="Terpasang Trakeostomi">   Terpasang Trakeostomi<br>
+                <input type="checkbox" name="gejalalain95[]" value="Terpasang endotracheal tube">  Terpasang endotracheal tube<br>
+                <input type="checkbox" name="gejalalain95[]" value="Perubahan afterload (oliguria,nadi perifer teraba lemah)">   Perubahan afterload (oliguria,nadi perifer teraba lemah)<br>
+                <input type="checkbox" name="gejalalain95[]" value="Perubahan preload (distensi vena jugularis, hepatomegali)">   Perubahan preload (distensi vena jugularis, hepatomegali)<br>
+                <input type="checkbox" name="gejalalain95[]" value="Perubahan irama jantung (gambaran ekg aritmia atau gangguan konduksi)">  Perubahan irama jantung (gambaran ekg aritmia atau gangguan konduksi)<br>
+                <input type="checkbox" name="gejalalain95[]" value="perubahan kontaktilitas (terdengar suara jantung s3 dan/atau s4)">  perubahan kontaktilitas (terdengar suara jantung s3 dan/atau s4)<br>
+                <input type="checkbox" name="gejalalain95[]" value="Hiperglikemia">  Hiperglikemia<br>
+                <input type="checkbox" name="gejalalain95[]" value="Hipertensi">   Hipertensi<br>
+                <input type="checkbox" name="gejalalain95[]" value="gaya hidup kurang gerak">  gaya hidup kurang gerak<br>
+                <input type="checkbox" name="gejalalain95[]" value="prosedur endovaskular">   prosedur endovaskular<br>
                 <br>
                 <b>Eliminasi</b> <br>
                 Keluhan berkemih <br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Urgensi(desakan)"> 115. Urgensi(desakan)<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Dribling(urin menetes)"> 104. Dribling(urin menetes)<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Nokturia (sering BAK malam hari)"> 105. Nokturia (sering BAK malam hari)<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Mengompol"> 106. Mengompol<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Enuresis (hilang kontrol BAK)"> 107. Enuresis (hilang kontrol BAK)<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Hesitancy (kesulitan berkemih)"> 108. Hesitancy (kesulitan berkemih)<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Sering buang air kecil"> 109. Sering buang air kecil<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Distensi kandung kemih"> 110. Distensi kandung kemih<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Tidak mengalami sensasi berkemih"> 111. Tidak mengalami sensasi berkemih<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Keinginan berkemih disertai inkontinensia"> 112. Keinginan berkemih disertai inkontinensia<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Disuria/anuria"> 113. Disuria/anuria<br>
-                <input type="checkbox" name="keluhanberkemih[]" value="Sensasi penuh kandung kemih"> 114. Sensasi penuh kandung kemih<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Urgensi(desakan)">  Urgensi(desakan)<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Dribling(urin menetes)">  Dribling(urin menetes)<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Nokturia (sering BAK malam hari)">  Nokturia (sering BAK malam hari)<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Mengompol">  Mengompol<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Enuresis (hilang kontrol BAK)">  Enuresis (hilang kontrol BAK)<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Hesitancy (kesulitan berkemih)">  Hesitancy (kesulitan berkemih)<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Sering buang air kecil">  Sering buang air kecil<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Distensi kandung kemih">   Distensi kandung kemih<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Tidak mengalami sensasi berkemih">  Tidak mengalami sensasi berkemih<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Keinginan berkemih disertai inkontinensia">  Keinginan berkemih disertai inkontinensia<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Disuria/anuria">  Disuria/anuria<br>
+                <input type="checkbox" name="keluhanberkemih[]" value="Sensasi penuh kandung kemih">  Sensasi penuh kandung kemih<br>
                 <br>
-                115. Volume Urin<br>
-                <input type="radio" name="urin"  value="Meningkat"> 44. Meningkat<br>
-                <input type="radio" name="urin"  value="Menurun"> 45. Menurun<br>
+                 Volume Urin<br>
+                <input type="radio" name="urin"  value="Meningkat">Meningkat<br>
+                <input type="radio" name="urin"  value="Menurun"> Menurun<br>
                 <input type="radio" name="urin"  value="Normal"> Normal<br>
                 <br>
                 <table width="100%">
@@ -878,7 +878,8 @@
                         <td>BAB</td>
                         <td> : </td>
                         <td>
-                            <input type="radio" name="bab1"  value="single"> 116. Teratur <br>
+                            <input type="radio" name="bab1"  value="single"> 
+                             Teratur <br>
                             <div class="single select" style="display:none">
                                 <input type="radio" name="bab"  value="1-2x/hari"> <font color="black">1-2x/hari</font> <br>
                                 <input type="radio" name="bab"  value="2-3x/hari"> 2-3x/hari  <br>
@@ -886,7 +887,7 @@
                             </div>
                         </td>
                         <td>
-                            <input type="radio" name="bab1"  value="team"> 117. Tidak Teratur <br>
+                            <input type="radio" name="bab1"  value="team">  Tidak Teratur <br>
                             <div class="team select" style="display:none" >
                                 <input type="radio" name="bab"  value="1-2x/minggu"> <font color="black">1-2x/hari</font> <br>
                                 <input type="radio" name="bab"  value="2-3x/minggu"> 2-3x/hari  <br>
@@ -898,10 +899,10 @@
                         <td><hr>Konsistensi</td>
                         <td> : </td>
                         <td colspan="2"><hr>
-                            <input type="radio" name="konsistensi"  value="Keras"> 118. Keras <br>
-                            <input type="radio" name="konsistensi"  value="Lunak"> 119. Lunak<br>
-                            <input type="radio" name="konsistensi"  value="Cair"> 120. Cair <br>
-                            <input type="radio" name="konsistensi"  value="Lendir/Darah"> 121. Lendir/Darah <br>
+                            <input type="radio" name="konsistensi"  value="Keras">  Keras <br>
+                            <input type="radio" name="konsistensi"  value="Lunak">   Lunak<br>
+                            <input type="radio" name="konsistensi"  value="Cair">   Cair <br>
+                            <input type="radio" name="konsistensi"  value="Lendir/Darah">  Lendir/Darah <br>
                             <input type="radio" name="konsistensi"  value="Normal"> Normal <hr>
                         </td>
                     </tr>
@@ -909,67 +910,67 @@
                         <td>Kel BAB</td>
                         <td> : </td>
                         <td colspan="2">
-                            <input type="radio" name="kelbab"  value="Lama/Sulit"> 118. Lama/Sulit <br>
-                            <input type="radio" name="kelbab"  value="Tak mampu tunda"> 124. Tak mampu tunda <br>
-                            <input type="radio" name="kelbab"  value="Tak Terkontrol"> 123. Tak Terkontrol <br>
-                            <input type="radio" name="kelbab"  value="Dikit & Sering"> 125. Dikit & Sering <br>
-                            <input type="radio" name="kelbab"  value="Tidak Ada Keluhan"> 125. Tidak Ada Keluhan <br><hr>
+                            <input type="radio" name="kelbab"  value="Lama/Sulit">   Lama/Sulit <br>
+                            <input type="radio" name="kelbab"  value="Tak mampu tunda">  Tak mampu tunda <br>
+                            <input type="radio" name="kelbab"  value="Tak Terkontrol">   Tak Terkontrol <br>
+                            <input type="radio" name="kelbab"  value="Dikit & Sering">   Dikit & Sering <br>
+                            <input type="radio" name="kelbab"  value="Tidak Ada Keluhan">  Tidak Ada Keluhan <br><hr>
                         </td>
                     </tr>
                 </table>
                 <br>
                 <b>Tanda dan gejala lainnya</b> <br>
-                <input type="checkbox" name="bablain[]" value="Konfusi"> 126. Konfusi <br>
-                <input type="checkbox" name="bablain[]" value="depresi"> 126. depresi<br>
-                <input type="checkbox" name="bablain[]" value="gangguan emosional"> 126. gangguan emosional<br>
-                <input type="checkbox" name="bablain[]" value="Ketidakcukupan asupan serat"> 127. Ketidakcukupan asupan serat<br>
-                <input type="checkbox" name="bablain[]" value="Ketidakcukupan diet"> 127. Ketidakcukupan diet<br>
-                <input type="checkbox" name="bablain[]" value="Perubahan kebiasaan makan"> 128. Perubahan kebiasaan makan<br>
-                <input type="checkbox" name="bablain[]" value="perubahan lingkungan"> 128. perubahan lingkungan<br>
-                <input type="checkbox" name="bablain[]" value="Ketidakadekuatan toileting"> 129. Ketidakadekuatan toileting<br>
-                <input type="checkbox" name="bablain[]" value="ketidakteraturan kebiasaan defekasi"> 129. ketidakteraturan kebiasaan defekasi<br>
-                <input type="checkbox" name="bablain[]" value="Aktivitas harian kurang dari yang dianjurkan"> 130. Aktivitas harian kurang dari yang dianjurkan<br>
-                <input type="checkbox" name="bablain[]" value="Penyalahgunaan laksatif"> 131. Penyalahgunaan laksatif<br>
+                <input type="checkbox" name="bablain[]" value="Konfusi">  Konfusi <br>
+                <input type="checkbox" name="bablain[]" value="depresi">   depresi<br>
+                <input type="checkbox" name="bablain[]" value="gangguan emosional">   gangguan emosional<br>
+                <input type="checkbox" name="bablain[]" value="Ketidakcukupan asupan serat"> . Ketidakcukupan asupan serat<br>
+                <input type="checkbox" name="bablain[]" value="Ketidakcukupan diet">   Ketidakcukupan diet<br>
+                <input type="checkbox" name="bablain[]" value="Perubahan kebiasaan makan">  Perubahan kebiasaan makan<br>
+                <input type="checkbox" name="bablain[]" value="perubahan lingkungan">  perubahan lingkungan<br>
+                <input type="checkbox" name="bablain[]" value="Ketidakadekuatan toileting">  Ketidakadekuatan toileting<br>
+                <input type="checkbox" name="bablain[]" value="ketidakteraturan kebiasaan defekasi">  ketidakteraturan kebiasaan defekasi<br>
+                <input type="checkbox" name="bablain[]" value="Aktivitas harian kurang dari yang dianjurkan">   Aktivitas harian kurang dari yang dianjurkan<br>
+                <input type="checkbox" name="bablain[]" value="Penyalahgunaan laksatif">   Penyalahgunaan laksatif<br>
                 <br>
                 <b>Neurosensor</b> <br>
-                <input type="checkbox" name="neurosensor[]" value="Melaporkan pernah mengalami pengalaman lupa"> 132. Melaporkan pernah mengalami pengalaman lupa<br>
-                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mempelajari keterampilan baru"> 133. Tidak mampu mempelajari keterampilan baru<br>
-                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat informasi faktual"> 134. Tidak mampu mengingat informasi faktual<br>
-                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat perilaku tertentu yang pernah dilakukan"> 135. Tidak mampu mengingat perilaku tertentu yang pernah dilakukan<br>
-                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat peristiwa"> 136. Tidak mampu mengingat peristiwa<br>
-                <input type="checkbox" name="neurosensor[]" value="Tidak mampu melakukan kemampuan yang dipelajari sebelumnya"> 137. Tidak mampu melakukan kemampuan yang dipelajari sebelumnya<br>
-                <input type="checkbox" name="neurosensor[]" value="Kurang motivasi untuk memulai/menyelesaikan perilaku berorientasi tujuan"> 138. Kurang motivasi untuk memulai/menyelesaikan perilaku berorientasi tujuan<br>
-                <input type="checkbox" name="neurosensor[]" value="Kurang motivasi untuk memulai/menyelesaikan perilaku terarah"> 139. Kurang motivasi untuk memulai/menyelesaikan perilaku terarah<br>
-                <input type="checkbox" name="neurosensor[]" value="Fluktuasi fungsi kognitif dan Fluktuasi tingkat kesadaran"> 140. Fluktuasi fungsi kognitif dan Fluktuasi tingkat kesadaran<br>
-                <input type="checkbox" name="neurosensor[]" value="Fluktuasi aktivitas psikomotorik"> 141. Fluktuasi aktivitas psikomotorik<br>
-                <input type="checkbox" name="neurosensor[]" value="Fungsi kognitif berubah progresif"> 142. Fungsi kognitif berubah progresif<br>
-                <input type="checkbox" name="neurosensor[]" value="Memori jangka pendek dan/atau panjang berubah"> 143. Memori jangka pendek dan/atau panjang berubah<br>
-                <input type="checkbox" name="neurosensor[]" value="Interpretasi berubah"> 144. Interpretasi berubah<br>
-                <input type="checkbox" name="neurosensor[]" value="Fungsi sosial terganggu"> 145. Fungsi sosial terganggu<br>
-                <input type="checkbox" name="neurosensor[]" value="Respon terhadap stimulus berubah"> 146. Respon terhadap stimulus berubah<br>
+                <input type="checkbox" name="neurosensor[]" value="Melaporkan pernah mengalami pengalaman lupa">   Melaporkan pernah mengalami pengalaman lupa<br>
+                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mempelajari keterampilan baru">  Tidak mampu mempelajari keterampilan baru<br>
+                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat informasi faktual">   Tidak mampu mengingat informasi faktual<br>
+                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat perilaku tertentu yang pernah dilakukan">   Tidak mampu mengingat perilaku tertentu yang pernah dilakukan<br>
+                <input type="checkbox" name="neurosensor[]" value="Tidak mampu mengingat peristiwa">  Tidak mampu mengingat peristiwa<br>
+                <input type="checkbox" name="neurosensor[]" value="Tidak mampu melakukan kemampuan yang dipelajari sebelumnya">  Tidak mampu melakukan kemampuan yang dipelajari sebelumnya<br>
+                <input type="checkbox" name="neurosensor[]" value="Kurang motivasi untuk memulai/menyelesaikan perilaku berorientasi tujuan">  Kurang motivasi untuk memulai/menyelesaikan perilaku berorientasi tujuan<br>
+                <input type="checkbox" name="neurosensor[]" value="Kurang motivasi untuk memulai/menyelesaikan perilaku terarah">  Kurang motivasi untuk memulai/menyelesaikan perilaku terarah<br>
+                <input type="checkbox" name="neurosensor[]" value="Fluktuasi fungsi kognitif dan Fluktuasi tingkat kesadaran">   Fluktuasi fungsi kognitif dan Fluktuasi tingkat kesadaran<br>
+                <input type="checkbox" name="neurosensor[]" value="Fluktuasi aktivitas psikomotorik">  Fluktuasi aktivitas psikomotorik<br>
+                <input type="checkbox" name="neurosensor[]" value="Fungsi kognitif berubah progresif">  Fungsi kognitif berubah progresif<br>
+                <input type="checkbox" name="neurosensor[]" value="Memori jangka pendek dan/atau panjang berubah">  Memori jangka pendek dan/atau panjang berubah<br>
+                <input type="checkbox" name="neurosensor[]" value="Interpretasi berubah">   Interpretasi berubah<br>
+                <input type="checkbox" name="neurosensor[]" value="Fungsi sosial terganggu">  Fungsi sosial terganggu<br>
+                <input type="checkbox" name="neurosensor[]" value="Respon terhadap stimulus berubah">  Respon terhadap stimulus berubah<br>
                 <br>
                 <b>Reproduksi dan seksualitas</b> <br>
-                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan aktivitas seksual berubah"> 147. Mengungkapkan aktivitas seksual berubah<br>
-                <input type="checkbox" name="reproduksi[]" value="mengungkapkan eksitasi seksual berubah"> 148. mengungkapkan eksitasi seksual berubah<br>
-                <input type="checkbox" name="reproduksi[]" value="Merasa hubungan seksual tidak memuaskan"> 149. Merasa hubungan seksual tidak memuaskan<br>
-                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan peran dan fungsi seksual berubah"> 150. Mengungkapkan peran dan fungsi seksual berubah<br>
-                <input type="checkbox" name="reproduksi[]" value="Mengeluhkan hasrat seksual menurun"> 151. Mengeluhkan hasrat seksual menurun<br>
-                <input type="checkbox" name="reproduksi[]" value="Mengeluh nyeri saat berhubungan seksual (dispareunia)"> 152. Mengeluh nyeri saat berhubungan seksual (dispareunia)<br>
-                <input type="checkbox" name="reproduksi[]" value="Mengeluh sulit melakukan aktivitas seksual"> 153. Mengeluh sulit melakukan aktivitas seksual<br>
-                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan perilaku seksual berubah"> 154. Mengungkapkan perilaku seksual berubah<br>
-                <input type="checkbox" name="reproduksi[]" value="Orientasi seksual berubah"> 155. Orientasi seksual berubah<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan aktivitas seksual berubah">  Mengungkapkan aktivitas seksual berubah<br>
+                <input type="checkbox" name="reproduksi[]" value="mengungkapkan eksitasi seksual berubah">   mengungkapkan eksitasi seksual berubah<br>
+                <input type="checkbox" name="reproduksi[]" value="Merasa hubungan seksual tidak memuaskan">   Merasa hubungan seksual tidak memuaskan<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan peran dan fungsi seksual berubah">  Mengungkapkan peran dan fungsi seksual berubah<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengeluhkan hasrat seksual menurun"> Mengeluhkan hasrat seksual menurun<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengeluh nyeri saat berhubungan seksual (dispareunia)">  Mengeluh nyeri saat berhubungan seksual (dispareunia)<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengeluh sulit melakukan aktivitas seksual">  Mengeluh sulit melakukan aktivitas seksual<br>
+                <input type="checkbox" name="reproduksi[]" value="Mengungkapkan perilaku seksual berubah">   Mengungkapkan perilaku seksual berubah<br>
+                <input type="checkbox" name="reproduksi[]" value="Orientasi seksual berubah">  Orientasi seksual berubah<br>
                 <br>
                 <b>Tanda dan Gejala Lainnya</b> <br>
-                <input type="checkbox" name="reproduksilain[]" value="Gangguan neurologi"> 156. Gangguan neurologi<br>
-                <input type="checkbox" name="reproduksilain[]" value="Gangguan urologi"> 156. Gangguan urologi<br>
-                <input type="checkbox" name="reproduksilain[]" value="Gangguan endokrin"> 156. Gangguan endokrin<br>
-                <input type="checkbox" name="reproduksilain[]" value="Keganasan/faktor ginekologi (mis.kehamilan,pasca persalinan)"> 157. Keganasan/faktor ginekologi (mis.kehamilan,pasca persalinan)<br>
-                <input type="checkbox" name="reproduksilain[]" value="Depresi/kecemasan/penganiayaan psikologis"> 158. Depresi/kecemasan/penganiayaan psikologis<br>
-                <input type="checkbox" name="reproduksilain[]" value="Penyalahgunaan obat/zat"> 159. Penyalahgunaan obat/zat<br>
-                <input type="checkbox" name="reproduksilain[]" value="Konflik hubungan/nilai personal dalam keluarga, budaya, agama"> 160. Konflik hubungan/nilai personal dalam keluarga, budaya, agama<br>
-                <input type="checkbox" name="reproduksilain[]" value="Pola seksual pasangan menyimpang"> 161. Pola seksual pasangan menyimpang<br>
-                <input type="checkbox" name="reproduksilain[]" value="Kurangnya privasi"> 162. Kurangnya privasi<br>
-                <input type="checkbox" name="reproduksilain[]" value="ketidakadekuatan edukasi"> 162. ketidakadekuatan edukasi<br>
+                <input type="checkbox" name="reproduksilain[]" value="Gangguan neurologi">  Gangguan neurologi<br>
+                <input type="checkbox" name="reproduksilain[]" value="Gangguan urologi">   Gangguan urologi<br>
+                <input type="checkbox" name="reproduksilain[]" value="Gangguan endokrin">   Gangguan endokrin<br>
+                <input type="checkbox" name="reproduksilain[]" value="Keganasan/faktor ginekologi (mis.kehamilan,pasca persalinan)">  Keganasan/faktor ginekologi (mis.kehamilan,pasca persalinan)<br>
+                <input type="checkbox" name="reproduksilain[]" value="Depresi/kecemasan/penganiayaan psikologis">  Depresi/kecemasan/penganiayaan psikologis<br>
+                <input type="checkbox" name="reproduksilain[]" value="Penyalahgunaan obat/zat">   Penyalahgunaan obat/zat<br>
+                <input type="checkbox" name="reproduksilain[]" value="Konflik hubungan/nilai personal dalam keluarga, budaya, agama">  Konflik hubungan/nilai personal dalam keluarga, budaya, agama<br>
+                <input type="checkbox" name="reproduksilain[]" value="Pola seksual pasangan menyimpang">  Pola seksual pasangan menyimpang<br>
+                <input type="checkbox" name="reproduksilain[]" value="Kurangnya privasi">  Kurangnya privasi<br>
+                <input type="checkbox" name="reproduksilain[]" value="ketidakadekuatan edukasi">  ketidakadekuatan edukasi<br>
                 <br>
                 <b>Kebersihan Diri</b> <br>
                 <div class="table-responsive">
@@ -977,35 +978,35 @@
                         <tr>
                             <td>Mandi</td>
                             <td> : </td>
-                            <td>163. <input type="radio" name="mandi"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
+                            <td> <input type="radio" name="mandi"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="mandi"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
                             <td><input type="radio" name="mandi"  value="Dibantu Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Berpakaian</td>
                             <td> : </td>
-                            <td>164. <input type="radio" name="berpakaian"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
+                            <td> <input type="radio" name="berpakaian"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="berpakaian"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
                             <td><input type="radio" name="berpakaian"  value="Dibantu Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>BAB/BAK</td>
                             <td> : </td>
-                            <td>165. <input type="radio" name="bababak"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
+                            <td>  <input type="radio" name="bababak"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="bababak"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
                             <td><input type="radio" name="bababak"  value="Dibantu Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Berhias</td>
                             <td> : </td>
-                            <td>166. <input type="radio" name="berhias"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
+                            <td> <input type="radio" name="berhias"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="berhias"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
                             <td><input type="radio" name="berhias"  value="Dibantu Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Makan/Minum</td>
                             <td> : </td>
-                            <td>167. <input type="radio" name="makanminum"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
+                            <td>  <input type="radio" name="makanminum"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="makanminum"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
                             <td><input type="radio" name="makanminum"  value="Dibantu Mandiri"> Mandiri </td>
                         </tr>
@@ -1013,58 +1014,58 @@
                 </div>
                 <br>
                 <b>Masalah Kebersihan Diri</b> <br>
-                <input type="checkbox" name="kebersihandiri[]" value="Menolak melakukan perawatan diri"> 168. Menolak melakukan perawatan diri<br>
-                <input type="checkbox" name="kebersihandiri[]" value="Minat melakukan perawatan diri kurang"> 169. Minat melakukan perawatan diri kurang<br>
-                <input type="checkbox" name="kebersihandiri[]" value="Tidak mampu mandi/mengenakan pakaian/makan/ketoilet/berhias secara permanen"> 170. Tidak mampu mandi/mengenakan pakaian/makan/ketoilet/berhias secara permanen<br>
-                <input type="checkbox" name="kebersihandiri[]" value="Tidak ada masalah Kebersihan diri"> 171. Tidak ada masalah Kebersihan diri<br>
+                <input type="checkbox" name="kebersihandiri[]" value="Menolak melakukan perawatan diri">  Menolak melakukan perawatan diri<br>
+                <input type="checkbox" name="kebersihandiri[]" value="Minat melakukan perawatan diri kurang">  Minat melakukan perawatan diri kurang<br>
+                <input type="checkbox" name="kebersihandiri[]" value="Tidak mampu mandi/mengenakan pakaian/makan/ketoilet/berhias secara permanen">  Tidak mampu mandi/mengenakan pakaian/makan/ketoilet/berhias secara permanen<br>
+                <input type="checkbox" name="kebersihandiri[]" value="Tidak ada masalah Kebersihan diri"> Tidak ada masalah Kebersihan diri<br>
                 <br>
                 <b>Riwayat dan Proteksi</b> <br>
                 Riwayat : <br>
-                <input type="checkbox" name="riwayat[]" value="Jatuh">172. Jatuh <br>
-                <input type="checkbox" name="riwayat[]" value="Luka Tekan">173. Luka Tekan <br>
-                <input type="checkbox" name="riwayat[]" value="Trauma">174. Trauma <br>
-                <input type="checkbox" name="riwayat[]" value="Stroke">175. Stroke <br>
-                <input type="checkbox" name="riwayat[]" value="Prosedur Invasif">176. Prosedur Invasif <br>
+                <input type="checkbox" name="riwayat[]" value="Jatuh"> Jatuh <br>
+                <input type="checkbox" name="riwayat[]" value="Luka Tekan">  Luka Tekan <br>
+                <input type="checkbox" name="riwayat[]" value="Trauma"> Trauma <br>
+                <input type="checkbox" name="riwayat[]" value="Stroke">  Stroke <br>
+                <input type="checkbox" name="riwayat[]" value="Prosedur Invasif">   Prosedur Invasif <br>
                 <br>
-                177.Apakah pasien memiliki lebih dari 1 penyakit ? <br>
+                 Apakah pasien memiliki lebih dari 1 penyakit ? <br>
                 <input type="radio" name="apapunyapenyakit"  value="Ya"> Ya
                 <input type="radio" name="apapunyapenyakit"  value="Tidak"> Tidak
                 <br>
                 <br>
-                178. Alat bantu jalan : <br>
+                  Alat bantu jalan : <br>
                 <input type="radio" name="alatjalan"  value="bed rest/dibantu perawat">  bed rest/dibantu perawat <br>
                 <input type="radio" name="alatjalan"  value="Berpegangan pada benda disekitar">  Berpegangan pada benda disekitar <br>
                 <input type="radio" name="alatjalan"  value="kruk/tongkat/walker"> kruk/tongkat/walker<br>
                 <input type="radio" name="alatjalan"  value="tidak ada"> tidak ada<br>
                 <br>
                 <b>Gaya berjalan/Cara berpindah</b> <br>
-                <input type="radio" name="gayajalan"  value="Normal">  179. Normal <br>
-                <input type="radio" name="gayajalan"  value="Bedrest">  179. Bedrest <br>
-                <input type="radio" name="gayajalan"  value="Immobile">  179. Immobile <br>
-                <input type="radio" name="gayajalan"  value="tidak dapat berpindah sendiri ">  179. tidak dapat berpindah sendiri <br>
-                <input type="radio" name="gayajalan"  value="Lemah/tidak bertenaga">  180. Lemah/tidak bertenaga <br>
-                <input type="radio" name="gayajalan"  value="Gangguan/tidak normal(pincang/diseret)">  181. Gangguan/tidak normal(pincang/diseret) <br>
+                <input type="radio" name="gayajalan"  value="Normal">  Normal <br>
+                <input type="radio" name="gayajalan"  value="Bedrest">  Bedrest <br>
+                <input type="radio" name="gayajalan"  value="Immobile">  Immobile <br>
+                <input type="radio" name="gayajalan"  value="tidak dapat berpindah sendiri ">  tidak dapat berpindah sendiri <br>
+                <input type="radio" name="gayajalan"  value="Lemah/tidak bertenaga">   Lemah/tidak bertenaga <br>
+                <input type="radio" name="gayajalan"  value="Gangguan/tidak normal(pincang/diseret)">    Gangguan/tidak normal(pincang/diseret) <br>
                 <br>
                 <b>Gejala Lainnya</b> <br>
-                <input type="checkbox" name="berpindahlain[]" value="Kerusakan jaringan dan/lapisan kulit"> 182. Kerusakan jaringan dan/lapisan kulit<br>
-                <input type="checkbox" name="berpindahlain[]" value="Peningkatan paparan organisme patogen lingkungan"> 183. Peningkatan paparan organisme patogen lingkungan<br>
-                <input type="checkbox" name="berpindahlain[]" value="Ketidakadekuatan pertahanan tubuh primer/sekunder"> 184. Ketidakadekuatan pertahanan tubuh primer/sekunder<br>
-                <input type="checkbox" name="berpindahlain[]" value="Terpapar patogen/zat kimia toksik/agen nosokomial"> 185. Terpapar patogen/zat kimia toksik/agen nosokomial<br>
-                <input type="checkbox" name="berpindahlain[]" value="Ketidakamanan transportasi"> 186. Ketidakamanan transportasi<br>
-                <input type="checkbox" name="berpindahlain[]" value="Disfungsi autoimun/biokimia"> 187. Disfungsi autoimun/biokimia<br>
-                <input type="checkbox" name="berpindahlain[]" value="Perubahan orientasi afektif"> 188. Perubahan orientasi afektif<br>
-                <input type="checkbox" name="berpindahlain[]" value="Perubahan sensasi"> 188. Perubahan sensasi<br>
-                <input type="checkbox" name="berpindahlain[]" value="Perubahan fungsi psikomotor"> 188. Perubahan fungsi psikomotor<br>
-                <input type="checkbox" name="berpindahlain[]" value="Perubahan fungsi kognitif"> 188. Perubahan fungsi kognitif<br>
-                <input type="checkbox" name="berpindahlain[]" value="Skor skala Braden Q ≤16 (anak) atau skor skala Braden ≤18 (dewasa)"> 189. Skor skala Braden Q ≤16 (anak) atau skor skala Braden ≤18 (dewasa)<br>
-                <input type="checkbox" name="berpindahlain[]" value="Skor ASA (American in Sensation Anethesiologist) ≥2"> 190. Skor ASA (American in Sensation Anethesiologist) ≥2<br>
-                <input type="checkbox" name="berpindahlain[]" value="Periode imobilisasi yang lama diatas permukaan yang keras (mis. prosedur operasi ≥2 jam)"> 191. Periode imobilisasi yang lama diatas permukaan yang keras (mis. prosedur operasi ≥2 jam)<br>
-                <input type="checkbox" name="berpindahlain[]" value="Skor RAPS (Risk Assesment Pressure Score) rendah"> 192. Skor RAPS (Risk Assesment Pressure Score) rendah<br>
-                <input type="checkbox" name="berpindahlain[]" value="Klasifikasi fungsional NYHA (New York Heart Association) ≥2"> 193. Klasifikasi fungsional NYHA (New York Heart Association) ≥2<br>
-                <input type="checkbox" name="berpindahlain[]" value="Dehidrasi/Kulit kering/Kulit bersisik/Peningkatan suhu kulit 1- 2 °C"> 194. Dehidrasi/Kulit kering/Kulit bersisik/Peningkatan suhu kulit 1- 2 °C<br>
-                <input type="checkbox" name="berpindahlain[]" value="kurang terpapar informasi tentang pecegahan pendarahan"> 258. kurang terpapar informasi tentang pecegahan pendarahan<br>
-                <input type="checkbox" name="berpindahlain[]" value="aneurisma/proses keganasan"> 259. aneurisma/proses keganasan<br>
-                <input type="checkbox" name="berpindahlain[]" value="traumayang mengancam nyawa"> 259. traumayang mengancam nyawa<br>
+                <input type="checkbox" name="berpindahlain[]" value="Kerusakan jaringan dan/lapisan kulit">  Kerusakan jaringan dan/lapisan kulit<br>
+                <input type="checkbox" name="berpindahlain[]" value="Peningkatan paparan organisme patogen lingkungan">  Peningkatan paparan organisme patogen lingkungan<br>
+                <input type="checkbox" name="berpindahlain[]" value="Ketidakadekuatan pertahanan tubuh primer/sekunder">  Ketidakadekuatan pertahanan tubuh primer/sekunder<br>
+                <input type="checkbox" name="berpindahlain[]" value="Terpapar patogen/zat kimia toksik/agen nosokomial">   Terpapar patogen/zat kimia toksik/agen nosokomial<br>
+                <input type="checkbox" name="berpindahlain[]" value="Ketidakamanan transportasi">   Ketidakamanan transportasi<br>
+                <input type="checkbox" name="berpindahlain[]" value="Disfungsi autoimun/biokimia">   Disfungsi autoimun/biokimia<br>
+                <input type="checkbox" name="berpindahlain[]" value="Perubahan orientasi afektif">   Perubahan orientasi afektif<br>
+                <input type="checkbox" name="berpindahlain[]" value="Perubahan sensasi">  Perubahan sensasi<br>
+                <input type="checkbox" name="berpindahlain[]" value="Perubahan fungsi psikomotor">  Perubahan fungsi psikomotor<br>
+                <input type="checkbox" name="berpindahlain[]" value="Perubahan fungsi kognitif">   Perubahan fungsi kognitif<br>
+                <input type="checkbox" name="berpindahlain[]" value="Skor skala Braden Q ≤16 (anak) atau skor skala Braden ≤18 (dewasa)">   Skor skala Braden Q ≤16 (anak) atau skor skala Braden ≤18 (dewasa)<br>
+                <input type="checkbox" name="berpindahlain[]" value="Skor ASA (American in Sensation Anethesiologist) ≥2"> Skor ASA (American in Sensation Anethesiologist) ≥2<br>
+                <input type="checkbox" name="berpindahlain[]" value="Periode imobilisasi yang lama diatas permukaan yang keras (mis. prosedur operasi ≥2 jam)">  Periode imobilisasi yang lama diatas permukaan yang keras (mis. prosedur operasi ≥2 jam)<br>
+                <input type="checkbox" name="berpindahlain[]" value="Skor RAPS (Risk Assesment Pressure Score) rendah">  Skor RAPS (Risk Assesment Pressure Score) rendah<br>
+                <input type="checkbox" name="berpindahlain[]" value="Klasifikasi fungsional NYHA (New York Heart Association) ≥2">  Klasifikasi fungsional NYHA (New York Heart Association) ≥2<br>
+                <input type="checkbox" name="berpindahlain[]" value="Dehidrasi/Kulit kering/Kulit bersisik/Peningkatan suhu kulit 1- 2 °C">  Dehidrasi/Kulit kering/Kulit bersisik/Peningkatan suhu kulit 1- 2 °C<br>
+                <input type="checkbox" name="berpindahlain[]" value="kurang terpapar informasi tentang pecegahan pendarahan">  kurang terpapar informasi tentang pecegahan pendarahan<br>
+                <input type="checkbox" name="berpindahlain[]" value="aneurisma/proses keganasan">   aneurisma/proses keganasan<br>
+                <input type="checkbox" name="berpindahlain[]" value="traumayang mengancam nyawa">   traumayang mengancam nyawa<br>
                 <br>
                 <br>
                 <b>B. Kondisi Kesehatan Sosial</b>
@@ -1081,13 +1082,13 @@
                 <input type="radio" name="adakahtergantung"  value="Tidak">  Tidak <br>
                 <br>
                 Adakah masalah mengenai hubungan dalam keluarga? <br>
-                <input type="checkbox" name="masalahkeluarga[]" value="masalah mengenai siapa yang merawat pasien kedepan"> 195. masalah mengenai siapa yang merawat pasien kedepan<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="pasien merasa diabaikan/tidak toleran"> 196. pasien merasa diabaikan/tidak toleran<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="keluargaTidak memenuhi kebutuhan anggota keluarga"> 197. keluargaTidak memenuhi kebutuhan anggota keluarga<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="Pasien mengabaikan angota keluarga"> 198. Pasien mengabaikan angota keluarga<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="Pasien mengeluh/khawatir tentang respon orang terdekat pada masalah kesehatan"> 199. Pasien mengeluh/khawatir tentang respon orang terdekat pada masalah kesehatan<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="Orang terdekat menarik diri dari klien"> 200. Orang terdekat menarik diri dari klien<br>
-                <input type="checkbox" name="masalahkeluarga[]" value="Terbatasnya komunikasi orang terdekat dengan pasien"> 201. Terbatasnya komunikasi orang terdekat dengan pasien<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="masalah mengenai siapa yang merawat pasien kedepan">  masalah mengenai siapa yang merawat pasien kedepan<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="pasien merasa diabaikan/tidak toleran">   pasien merasa diabaikan/tidak toleran<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="keluargaTidak memenuhi kebutuhan anggota keluarga">  keluargaTidak memenuhi kebutuhan anggota keluarga<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="Pasien mengabaikan angota keluarga">  Pasien mengabaikan angota keluarga<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="Pasien mengeluh/khawatir tentang respon orang terdekat pada masalah kesehatan">  Pasien mengeluh/khawatir tentang respon orang terdekat pada masalah kesehatan<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="Orang terdekat menarik diri dari klien">  Orang terdekat menarik diri dari klien<br>
+                <input type="checkbox" name="masalahkeluarga[]" value="Terbatasnya komunikasi orang terdekat dengan pasien">  Terbatasnya komunikasi orang terdekat dengan pasien<br>
                 <br>
                 Apakah pasien memiliki dukungan dari pihak lain? <br>
                 <input type="radio" name="dukunganlain"  value="Ya">  Ya
@@ -1098,86 +1099,86 @@
                 <input type="radio" name="butuhdukungan"  value="Tidak">  Tidak <br>
                 <br>
                 Masalah Lainnya: <br>
-                <input type="checkbox" name="masalahdukungan[]" value="Menyatakan frustasi atau tidak mampu melaksanakan aktifitas sebelumnya"> 202. Menyatakan frustasi atau tidak mampu melaksanakan aktifitas sebelumnya<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Bergantung pada orang lain"> 203. Bergantung pada orang lain<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Menilai diri negatif (misal tidak berguna, tidak tertolong)"> 204. Menilai diri negatif (misal tidak berguna, tidak tertolong)<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Merasa malu/bersalah"> 205. Merasa malu/bersalah<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Merasa tidak mampu melakukan apapun"> 206. Merasa tidak mampu melakukan apapun<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Meremehkan kemampuan mengatasi masalah"> 207. Meremehkan kemampuan mengatasi masalah<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Merasa tidak memiliki kelebihan"> 208. Merasa tidak memiliki kelebihan<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Melebih-lebihkan penilaian negatif tentang diri sendiri"> 209. Melebih-lebihkan penilaian negatif tentang diri sendiri<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Menolak penilaian positif tentang diri sendiri"> 210. Menolak penilaian positif tentang diri sendiri<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Enggan mencoba hal baru"> 211. Enggan mencoba hal baru<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Berjalan menunduk/Postur tubuh menunduk"> 211. Berjalan menunduk/Postur tubuh menunduk<br>
-                <input type="checkbox" name="masalahdukungan[]" value="Berbicara pelan dan lirih "> 212. Berbicara pelan dan lirih <br>
-                <input type="checkbox" name="masalahdukungan[]" value="Menolak berinteraksi dengan orang lain"> 212. Menolak berinteraksi dengan orang lain<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Menyatakan frustasi atau tidak mampu melaksanakan aktifitas sebelumnya">   Menyatakan frustasi atau tidak mampu melaksanakan aktifitas sebelumnya<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Bergantung pada orang lain">  Bergantung pada orang lain<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Menilai diri negatif (misal tidak berguna, tidak tertolong)">  Menilai diri negatif (misal tidak berguna, tidak tertolong)<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Merasa malu/bersalah">  Merasa malu/bersalah<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Merasa tidak mampu melakukan apapun">  Merasa tidak mampu melakukan apapun<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Meremehkan kemampuan mengatasi masalah">  Meremehkan kemampuan mengatasi masalah<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Merasa tidak memiliki kelebihan">  Merasa tidak memiliki kelebihan<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Melebih-lebihkan penilaian negatif tentang diri sendiri">  Melebih-lebihkan penilaian negatif tentang diri sendiri<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Menolak penilaian positif tentang diri sendiri">  Menolak penilaian positif tentang diri sendiri<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Enggan mencoba hal baru">  Enggan mencoba hal baru<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Berjalan menunduk/Postur tubuh menunduk">  Berjalan menunduk/Postur tubuh menunduk<br>
+                <input type="checkbox" name="masalahdukungan[]" value="Berbicara pelan dan lirih ">   Berbicara pelan dan lirih <br>
+                <input type="checkbox" name="masalahdukungan[]" value="Menolak berinteraksi dengan orang lain">  Menolak berinteraksi dengan orang lain<br>
                 <br>
                 Apakah ada pikiran lain yang mengganggu pasien? <br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Mengungkapkan keputusasaan"> 213. Mengungkapkan keputusasaan<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Berperilaku pasif"> 214. Berperilaku pasif<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Keluarga tidak mampu beradaptasi terhadap situasi"> 215. Keluarga tidak mampu beradaptasi terhadap situasi<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Tidak mampu berkomunikasi secara terbuka diantara anggota keluarga"> 216. Tidak mampu berkomunikasi secara terbuka diantara anggota keluarga<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Menyalahkan orang lain"> 217. Menyalahkan orang lain<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Menyangkal adanya masalah dan kelemahan diri"> 218. Menyangkal adanya masalah dan kelemahan diri<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Merasionalkan kegagalan"> 219. Merasionalkan kegagalan<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Hipersensitif terhadap kritik"> 220. Hipersensitif terhadap kritik<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa bingung menjalankan peran"> 221. Merasa bingung menjalankan peran<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa harapan tidak terpenuhi"> 222. Merasa harapan tidak terpenuhi<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa tidak puas dalam menjalankan peran"> 223. Merasa tidak puas dalam menjalankan peran<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Konflik peran"> 224. Konflik peran<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Adaptasi tidak adekuat"> 224. Adaptasi tidak adekuat<br>
-                <input type="checkbox" name="pikiranmengganggu[]" value="Strategi koping tidak efektif"> 225. Strategi koping tidak efektif<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Mengungkapkan keputusasaan">   Mengungkapkan keputusasaan<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Berperilaku pasif">   Berperilaku pasif<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Keluarga tidak mampu beradaptasi terhadap situasi">  Keluarga tidak mampu beradaptasi terhadap situasi<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Tidak mampu berkomunikasi secara terbuka diantara anggota keluarga">   Tidak mampu berkomunikasi secara terbuka diantara anggota keluarga<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Menyalahkan orang lain">   Menyalahkan orang lain<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Menyangkal adanya masalah dan kelemahan diri">  Menyangkal adanya masalah dan kelemahan diri<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Merasionalkan kegagalan">   Merasionalkan kegagalan<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Hipersensitif terhadap kritik">  Hipersensitif terhadap kritik<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa bingung menjalankan peran">  Merasa bingung menjalankan peran<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa harapan tidak terpenuhi">   Merasa harapan tidak terpenuhi<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Merasa tidak puas dalam menjalankan peran">  Merasa tidak puas dalam menjalankan peran<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Konflik peran">  Konflik peran<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Adaptasi tidak adekuat">   Adaptasi tidak adekuat<br>
+                <input type="checkbox" name="pikiranmengganggu[]" value="Strategi koping tidak efektif">  Strategi koping tidak efektif<br>
                 <br>
                 Apa harapan pasien? <br>
-                <input type="checkbox" name="harapanpasien[]" value="Mengekspresikan keinginan untuk meningkatkan dinamika keluarga"> 226. Mengekspresikan keinginan untuk meningkatkan dinamika keluarga<br>
-                <input type="checkbox" name="harapanpasien[]" value="Menunjukkan fungsi keluarga dalam memenuhi kebutuhan fisik, sosial dan psikologi anggota keluarga"> 227. Menunjukkan fungsi keluarga dalam memenuhi kebutuhan fisik, sosial dan psikologis
+                <input type="checkbox" name="harapanpasien[]" value="Mengekspresikan keinginan untuk meningkatkan dinamika keluarga">   Mengekspresikan keinginan untuk meningkatkan dinamika keluarga<br>
+                <input type="checkbox" name="harapanpasien[]" value="Menunjukkan fungsi keluarga dalam memenuhi kebutuhan fisik, sosial dan psikologi anggota keluarga">  Menunjukkan fungsi keluarga dalam memenuhi kebutuhan fisik, sosial dan psikologis
                 anggota keluarga<br>
-                <input type="checkbox" name="harapanpasien[]" value="Menunjukkan aktivitas untuk mendukung keselamatan dan pertumbuhan anggota keluarga"> 228. Menunjukkan aktivitas untuk mendukung keselamatan dan pertumbuhan anggota keluarga<br>
-                <input type="checkbox" name="harapanpasien[]" value="Peran keluarga fleksibel dan tepat dengan tahap perkembangan Terlihat adanya respek dengan anggota keluarga"> 229. Peran keluarga fleksibel dan tepat dengan tahap perkembangan Terlihat adanya respek dengan anggota keluarga<br>
+                <input type="checkbox" name="harapanpasien[]" value="Menunjukkan aktivitas untuk mendukung keselamatan dan pertumbuhan anggota keluarga">   Menunjukkan aktivitas untuk mendukung keselamatan dan pertumbuhan anggota keluarga<br>
+                <input type="checkbox" name="harapanpasien[]" value="Peran keluarga fleksibel dan tepat dengan tahap perkembangan Terlihat adanya respek dengan anggota keluarga">   Peran keluarga fleksibel dan tepat dengan tahap perkembangan Terlihat adanya respek dengan anggota keluarga<br>
                 <br>
                 Bagaimana pendapat pasien tentang kehidupan sosial?<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Merasa tidak nyaman dengan situasi sosial"> 230. Merasa tidak nyaman dengan situasi sosial<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Merasa sulit menerima atau mengkomunikasikan perasaan"> 231. Merasa sulit menerima atau mengkomunikasikan perasaan<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Kurang responsif atau tertarik pada orang lain"> 232. Kurang responsif atau tertarik pada orang lain<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Tidak berminat melakukan kontak emosi dan fisik"> 233. Tidak berminat melakukan kontak emosi dan fisik<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Merasa ingin sendiri/ Menarik diri"> 234. Merasa ingin sendiri/ Menarik diri<br>
-                <input type="checkbox" name="pendapatpasien[]" value="Merasa tidak aman ditempat umum"> 235. Merasa tidak aman ditempat umum<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Merasa tidak nyaman dengan situasi sosial">  Merasa tidak nyaman dengan situasi sosial<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Merasa sulit menerima atau mengkomunikasikan perasaan">  Merasa sulit menerima atau mengkomunikasikan perasaan<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Kurang responsif atau tertarik pada orang lain">  Kurang responsif atau tertarik pada orang lain<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Tidak berminat melakukan kontak emosi dan fisik">   Tidak berminat melakukan kontak emosi dan fisik<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Merasa ingin sendiri/ Menarik diri">  Merasa ingin sendiri/ Menarik diri<br>
+                <input type="checkbox" name="pendapatpasien[]" value="Merasa tidak aman ditempat umum">   Merasa tidak aman ditempat umum<br>
                 <br>
                 Bagaimana mekanisme koping pasien?<br>
-                <input type="checkbox" name="kopingpasien[]" value="Mengungkapkan tidak mampu mengatasi masalah"> 236. Mengungkapkan tidak mampu mengatasi masalah<br>
-                <input type="checkbox" name="kopingpasien[]" value="Tidak memenuhi peran yang diharapkan (sesuai usia)"> 237. Tidak memenuhi peran yang diharapkan (sesuai usia)<br>
-                <input type="checkbox" name="kopingpasien[]" value="Menggunakan mekanisme koping yang tidak sesuai"> 238. Menggunakan mekanisme koping yang tidak sesuai<br>
+                <input type="checkbox" name="kopingpasien[]" value="Mengungkapkan tidak mampu mengatasi masalah">  Mengungkapkan tidak mampu mengatasi masalah<br>
+                <input type="checkbox" name="kopingpasien[]" value="Tidak memenuhi peran yang diharapkan (sesuai usia)">  Tidak memenuhi peran yang diharapkan (sesuai usia)<br>
+                <input type="checkbox" name="kopingpasien[]" value="Menggunakan mekanisme koping yang tidak sesuai">   Menggunakan mekanisme koping yang tidak sesuai<br>
                 <br>
                 Bagaimana komunikasi verbal pasien?<br>
-                <input type="checkbox" name="kondisiverbal[]" value="Tidak mampu berbicara atau mendengar"> 239. Tidak mampu berbicara atau mendengar<br>
-                <input type="checkbox" name="kondisiverbal[]" value="Menunjukkan respon tidak sesuai"> 240. Menunjukkan respon tidak sesuai<br>
+                <input type="checkbox" name="kondisiverbal[]" value="Tidak mampu berbicara atau mendengar">  Tidak mampu berbicara atau mendengar<br>
+                <input type="checkbox" name="kondisiverbal[]" value="Menunjukkan respon tidak sesuai">  Menunjukkan respon tidak sesuai<br>
                 <br>
                 Masalah Lainnya <br>
-                <input type="checkbox" name="lainnyapasien[]" value="Perjalanan penyakit yang berlangsung lama atau tidak dapat di prediksi"> 241. Perjalanan penyakit yang berlangsung lama atau tidak dapat di prediksi<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Harga diri rendah yang berlangsung lama"> 242. Harga diri rendah yang berlangsung lama<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Ketidakmampuan mengatasi masalah"> 243. Ketidakmampuan mengatasi masalah<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Kurang dukungan sosial"> 244. Kurang dukungan sosial<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Penyakit yang melemahkan secara progresif"> 245. Penyakit yang melemahkan secara progresif<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Marginalisasi sosial /Kondisi terstigma"> 246. Marginalisasi sosial /Kondisi terstigma<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Kurang mendapat kasih sayang/ penghargaan dari orang lain"> 247. Kurang mendapat kasih sayang/ penghargaan dari orang lain<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Kurang keterlibatan dalam kelompok/masyarakat"> 248. Kurang keterlibatan dalam kelompok/masyarakat<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Ketidakmampuan menunjukkan perasaan"> 249. Ketidakmampuan menunjukkan perasaan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Perasaaan kurang didukung orang lain"> 250. Perasaaan kurang didukung orang lain<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Gangguan gambaran diri,fungsi,dan peran sosial"> 251. Gangguan gambaran diri,fungsi,dan peran sosial<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Harapan tidak realistis"> 252. Harapan tidak realistis<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Kurang pemahaman terhadap situasi"> 253. Kurang pemahaman terhadap situasi<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Penurunan kontrol terhadap lingkungan"> 254. Penurunan kontrol terhadap lingkungan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Perilaku tidak sesuai dengan nilai setempat"> 255. Perilaku tidak sesuai dengan nilai setempat<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Perasaan tidak berdaya"> 256. Perasaan tidak berdaya<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Riwayat pengabaian"> 257. Riwayat pengabaian<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Riwayat Penganiayaan"> 257. Riwayat Penganiayaan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Riwayat penolakan"> 257. Riwayat penolakan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Riwayat kehilangan"> 257. Riwayat kehilangan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Merasa sedih/menangis"> 260. Merasa sedih/menangis<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Merasa bersalah atau menyalahkan orang lain"> 261. Merasa bersalah atau menyalahkan orang lain<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Tidak menerima kehilangan"> 262. Tidak menerima kehilangan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Merasa tidak ada harapan"> 263. Merasa tidak ada harapan<br>
-                <input type="checkbox" name="lainnyapasien[]" value="Pola tidur berubah dan tidak dapat berkonsentrasi"> 264. Pola tidur berubah dan tidak dapat berkonsentrasi<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Perjalanan penyakit yang berlangsung lama atau tidak dapat di prediksi">  Perjalanan penyakit yang berlangsung lama atau tidak dapat di prediksi<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Harga diri rendah yang berlangsung lama">  Harga diri rendah yang berlangsung lama<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Ketidakmampuan mengatasi masalah">  Ketidakmampuan mengatasi masalah<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Kurang dukungan sosial">  Kurang dukungan sosial<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Penyakit yang melemahkan secara progresif">  Penyakit yang melemahkan secara progresif<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Marginalisasi sosial /Kondisi terstigma">  Marginalisasi sosial /Kondisi terstigma<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Kurang mendapat kasih sayang/ penghargaan dari orang lain">  Kurang mendapat kasih sayang/ penghargaan dari orang lain<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Kurang keterlibatan dalam kelompok/masyarakat">  Kurang keterlibatan dalam kelompok/masyarakat<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Ketidakmampuan menunjukkan perasaan">  Ketidakmampuan menunjukkan perasaan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Perasaaan kurang didukung orang lain">  Perasaaan kurang didukung orang lain<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Gangguan gambaran diri,fungsi,dan peran sosial">  Gangguan gambaran diri,fungsi,dan peran sosial<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Harapan tidak realistis">  Harapan tidak realistis<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Kurang pemahaman terhadap situasi">  Kurang pemahaman terhadap situasi<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Penurunan kontrol terhadap lingkungan">  Penurunan kontrol terhadap lingkungan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Perilaku tidak sesuai dengan nilai setempat">  Perilaku tidak sesuai dengan nilai setempat<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Perasaan tidak berdaya"> Perasaan tidak berdaya<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Riwayat pengabaian">  Riwayat pengabaian<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Riwayat Penganiayaan">  Riwayat Penganiayaan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Riwayat penolakan">  Riwayat penolakan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Riwayat kehilangan">  Riwayat kehilangan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Merasa sedih/menangis">  Merasa sedih/menangis<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Merasa bersalah atau menyalahkan orang lain">  Merasa bersalah atau menyalahkan orang lain<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Tidak menerima kehilangan">  Tidak menerima kehilangan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Merasa tidak ada harapan">   Merasa tidak ada harapan<br>
+                <input type="checkbox" name="lainnyapasien[]" value="Pola tidur berubah dan tidak dapat berkonsentrasi">  Pola tidur berubah dan tidak dapat berkonsentrasi<br>
 
             </div>
         </div>

@@ -1,7 +1,7 @@
 <div class="col-md-12">
     <h3>Diagnosis keperawatan </h3>
     <br>
-    <h4 style="color:red"><b>Konfusi akut/b></h4>
+    <h4 style="color:red"><b>Konfusi akut</b></h4>
     <b>b.d</b> Delirium, Demensia, Fluktuasi siklus
     tidur-bangun, Usia lebih dari 60
     tahun, Penyalahgunaan zat

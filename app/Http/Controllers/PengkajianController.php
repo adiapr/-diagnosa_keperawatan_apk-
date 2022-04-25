@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Pengkajian;
 use App\Models\User;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Auth;
 
 class PengkajianController extends Controller
 {
@@ -26,8 +27,11 @@ class PengkajianController extends Controller
 
     public function pengkajian_add(Request $request){
 
+        $user_id = Auth::user()->id;
+
         $pengkajian = new Pengkajian;
         $requestArray = $request->all();
+        $pengkajian->user_id            = $user_id;
         $pengkajian->namapasien         = $request->nama;
         $pengkajian->usia               = $request->usia;
         $pengkajian->tgl_lahir           = $request->tanggal;
@@ -194,9 +198,11 @@ class PengkajianController extends Controller
 
     public function pengkajian_resume(){
         Paginator::useBootstrap();
+        $user_id = Auth::user()->id;
         $batas      = 10;
-        $jmldata    = Pengkajian::count();
-        $resume     = Pengkajian::orderBy('id','desc')
+        $jmldata    = Pengkajian::where('user_id', $user_id)->count();
+        $resume     = Pengkajian::where('user_id', $user_id)
+                        ->orderBy('id','desc')
                         ->paginate($batas);
         $no         = $batas*($resume->currentPage() -1);
         // alert()->success('Data Resume','Tekan OK untuk melanjutkan');
