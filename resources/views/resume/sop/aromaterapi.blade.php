@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <hr>
-    <h2 align="center">
-        STANDAR OPERASIONAL PROSEDUR  <br> PEMBERIAN AROMATERAPI
-    </h3>
+    <h5 align="center">
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> PEMBERIAN AROMATERAPI</b>
+    </h5>
 
-    <table width="100%" border="1">
+    <table width="100%" class="table table-bordered">
         <tr>
             <td>Pengertian</td>
             <td>Aromaterapi adalah istilah modern yang di pakai untuk

@@ -13,7 +13,7 @@
     jalan napas, Proses infeksi, Respon alergi, Efek agen
     farmakologis (mis.
     anastesi) <br>
-    <b>d.d</b> {{ $data1->batuk }} , {{ $data1->sputum }}, {{ $data1->suaranafas }}
+    <b>d.d</b> {{ $data1->batuk }} , {{ $data1->sputum }}, {{ $data1->suaranafas }} 
 
 
 

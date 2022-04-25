@@ -1,53 +1,63 @@
 <div class="col-md-12">
-    <hr>
-    <h3 align="center"><b>
-        STANDAR OPERASIONAL PROSEDUR  <br> TEKNIK RELAKSASI NAFAS DALAM
-    </b></h3>
+    <h3>Diagnosis keperawatan </h3>
+    <br>
+    <h4 style="color:red"><b>Risiko</b></h4>
+    <b>b.d </b>
+    <br>
+    <b>d.d</b> {{  }}  
 
-    <table width="100%" border="1">
-        <tr>
-            <td>Pengertian</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Tujuan</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Persiapan</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Prosedur</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Terminasi</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Dokumentasi</td>
-            <td></td>
-        </tr>
-    </table>
-    <hr>
+    <h4>Luaran Keperawatan</h4>
+    Setelah
+    <ol>
+        <li>keluhan</li>   
+    </ol>
+    <h4>Intervensi keperawatan :</h4>
+    <br>
+    <b>Manajemen</b><br>
+
+    <em>Observasi</em>
+    <ul>
+        <li>Identifikasi</li>
+    </ul>
+
+    <em>Terapeutik</em>
+    <ul>
+        <li>Batasi </li>
+    </ul>
+
+    <em>Edukasi</em>
+    <ul>
+        <li>Jelaskan </li> 
+    </ul>
+
+    <em>Kolaborasi</em>
+    <ul>
+        <li>Kolaborasi</li>
+    </ul>
+
+    <br>
+    <b>Manajemen</b><br>
+
+    <em>Observasi</em>
+    <ul>
+        <li>Identifikasi</li>
+    </ul>
+
+    <em>Terapeutik</em>
+    <ul>
+        <li>Batasi </li>
+    </ul>
+
+    <em>Edukasi</em>
+    <ul>
+        <li>Jelaskan </li> 
+    </ul>
+
+    <em>Kolaborasi</em>
+    <ul>
+        <li>Kolaborasi</li>
+    </ul>
+
 </div>
 
-            {{-- ---------------------------- Risiko Ketidakseimbangan Elektrolit: ------------------------------------ --}}
-            @if (
-                    (
-                        ($data1->keluhan == "Sulit Menelan") ||
-                        ($data1->keluhan == "Tidak berniat makan")
-                    ) &&
-                    (
-                        ($data1->tandagejala == "Ketidakmampuan mengabsorbsi nutrien") ||
-                        ($data1->tandagejala == "Financial tidak mencukupi") ||
-                        ($data1->tandagejala == "Stress") ||
-                        ($data1->tandagejala == "Peningkatan kebutuhan metabolisme")
-                    )
-                )
-                @include('resume.diagnosa.risikodefisitnutrisi')
-                @include('resume.sop.edukasidietpasien')
-            @endif
-            {{-- ------------------------------------------------------------------------------------- --}}
-
+{{-- Risiko Harga Diri Rendah Kronis --}}

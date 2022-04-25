@@ -1,8 +1,8 @@
 <div class="col-md-12">
     <hr>
-    <h3 align="center">
-        STANDAR OPERASIONAL PROSEDUR  <br> TEKNIK RELAKSASI NAFAS DALAM
-    </h3>
+    <h5 align="center">
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> PEMBERIAN TEKNIK IMAJINASI TERPIMPIN <br>(GUIDED IMAGERY)</b>
+    </h5>
 
     <table width="100%" border="1">
         <tr>

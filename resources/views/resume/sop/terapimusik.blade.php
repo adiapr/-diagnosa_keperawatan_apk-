@@ -1,7 +1,7 @@
 <div class="col-md-12">
-    <h3 align="center"><b>
-        STANDAR OPERASIONAL PROSEDUR  <br> TERAPI MUSIK
-    </b></h3>
+    <h5 align="center"><b>
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> TERAPI MUSIK</b>
+    </b></h5>
 
     <table width="100%" border="1">
         <tr>

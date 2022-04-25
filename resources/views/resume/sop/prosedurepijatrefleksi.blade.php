@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <hr>
-    <h3 align="center">
-        STANDAR OPERASIONAL PROSEDUR  <br> PIJAT REFLEKSI
-    </h3>
+    <h5 align="center">
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> PIJAT REFLEKSI</b>
+    </h5>
 
-    <table width="100%" border="1">
+    <table width="100%" class="table table-bordered">
         <tr>
             <td>Pengertian</td>
             <td>Pijat dengan melakukan penekanan pada titik – titik syaraf. Titik – titik

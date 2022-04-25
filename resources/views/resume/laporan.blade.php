@@ -10,7 +10,7 @@
             <a href="/exportlaporan/{{ $data1->id }}" class="btn btn-success btn-sm"> <i class="fa fa-file-pdf-o"></i> Download</a><br><br>
         </div>
     </div>
-    <div class="row"  style="border:solid 2px grey">
+    <div class="row"  style="border:solid 2px grey;">
         <div class="col-md-12">
 
             <h3 align="center"><img src="http://diagnosa.mangroveleather.id/img/logo.webp"  alt="" width="300"><br>

@@ -10,10 +10,16 @@
     perawatan/pengoba
     tan, Interaksi
     interpersonal tidak
-    memuaskan <b>d.d</b> Menyatakan frustasi atau tidak mampu melaksanakan aktifitas sebelumnya, Bergantung pada orang lain
+    memuaskan <b>d.d</b> {{ $data1->masalahdukungan }}, {{ $data1->lainnyapasien }}
 
     <h4>Luaran Keperawatan</h4>
-    Setelah dilakukan Intervensi Keperawatan diharapkan Tingkat nyeri menurun dengan kriteria hasil :
+    Setelah
+    dilakukan
+    intervensi
+    keperawatan
+    diharapkan
+    Keberdayaan meningkat
+    dengan kriteria hasil :
     <ol>
         <li>Pernyataan
             mampu

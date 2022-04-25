@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <hr>
-    <h3 align="center">
-        STANDAR OPERASIONAL PROSEDUR  <br> TERAPI HEALING TOUCH
-    </b></h3>
+    <h5 align="center">
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> TERAPI HEALING TOUCH
+    </b></h5>
 
-    <table width="100%" border="1">
+    <table width="100%" class="table table-bordered">
         <tr>
             <td>Pengertian</td>
             <td>The Chakra Connection adalah teknik menyeimbangkan tubuh secara

@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <hr>
-    <h3 align="center">
-        STANDAR OPERASIONAL PROSEDUR  <br> TEKNIK RELAKSASI NAFAS DALAM
-    </b></h3>
+    <h5 align="center">
+        <b>STANDAR OPERASIONAL PROSEDUR  <br> TEKNIK RELAKSASI NAFAS DALAM</b>
+    </b></h5>
 
-    <table width="100%" border="1">
+    <table width="100%" class="table table-bordered">
         <tr>
             <td>Pengertian</td>
             <td>Menurut Smeltzer & Bare (2002) dalam Andarmoyo (2013) relaksasi nafas
