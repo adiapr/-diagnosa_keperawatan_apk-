@@ -73,7 +73,7 @@
                                 <select name="diastole" required class="form-control input-sm" >
                                     <option value="">- Pilih -</option>
                                     <?php
-                                        for( $i=60;$i<=100;$i++){
+                                        for( $i=60;$i<=130;$i++){
                                             echo"<option value='$i'>$i</option>";
                                         }
                                     ?>
@@ -419,10 +419,10 @@
                 <hr>
                 <div id="Composmentis">
                     <b>Visual Analogue Scale (VAS)</b><br>
-                    <input type="radio" name="vas" value="Tidak Nyeri (0-4MM)"> Tidak Nyeri (0-4MM) <br>
-                    <input type="radio" name="vas" value="Nyeri Ringan (5MM-44MM)"> Nyeri Ringan (5MM-44MM) <br>
-                    <input type="radio" name="vas" value="Nyeri Sedang (45MM-74MM)"> Nyeri Sedang (45MM-74MM) <br>
-                    <input type="radio" name="vas" value="Nyeri Berat (75MM-100MM) "> Nyeri Berat (75MM-100MM) <br><br>
+                    <input type="radio" name="vas" value="Tidak Nyeri (0-4MM)"> Tidak Nyeri <br>
+                    <input type="radio" name="vas" value="Nyeri Ringan (5MM-44MM)"> Nyeri Ringan  <br>
+                    <input type="radio" name="vas" value="Nyeri Sedang (45MM-74MM)"> Nyeri Sedang <br>
+                    <input type="radio" name="vas" value="Nyeri Berat (75MM-100MM) "> Nyeri Berat <br><br>
                 </div>
                 <div id="NonComposmentis">
                     <hr>
@@ -474,14 +474,14 @@
                         <td><input type="checkbox" name="tambahan_nyeri[]" value="Tampak Meringis">  Tampak Meringis</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="tambahan_nyeri[]" value="Megeluh Nyeri">  Megeluh Nyeri</td>
+                        <td><input type="checkbox" name="tambahan_nyeri[]" value="Mengeluh Nyeri">  Mengeluh Nyeri</td>
                         <td><input type="checkbox" name="tambahan_nyeri[]" value="Bersikap Protektif"> Bersikap Protektif</td>
                     </tr>
                 </table>
                 {{-- ------------------------------------------------------------------------------- --}}
                 {{-- LOKASI NYERI POIN 9 --}}
                 <br>
-                Lokasi Nyeri
+                Lokasi Nyeri (Sumber Nyeri)
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
@@ -491,7 +491,7 @@
                         </tr>
                     </table>
                 </div>
-                Lokasi nyeri : <br>
+                Lokasi nyeri (Sumber Nyeri) : <br>
                 <select name="lokasi_nyeri" class="form-control input-sm">
                     <option required value="">- Pilih -</option>
                     <?php
@@ -619,7 +619,7 @@
                 <input type="radio" name="peristaltik" value="Hiperaktif"> Hiperaktif<br>
                 <br>
                 Membran Mukosa<br>
-                <input type="radio" name="membranmukosa"  value="Tidak ada"> Lembab<br>
+                <input type="radio" name="membranmukosa"  value="Lembab"> Lembab<br>
                 <input type="radio" name="membranmukosa"  value="Kering">  Kering<br>
                  <br>
                 Edema<br>
@@ -670,6 +670,7 @@
                 <input type="checkbox" name="tandagejala[]" value="Sepsis">   Sepsis <br>
                 <input type="checkbox" name="tandagejala[]" value="SIRS">   SIRS<br>
                 <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mencerna makanan">  Ketidakmampuan mencerna makanan<br>
+                <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mengabsorbsi nutrien">  Ketidakmampuan mengabsorbsi nutrien<br>
                 <input type="checkbox" name="tandagejala[]" value="Financial tidak mencukupi">  Financial tidak mencukupi<br>
                 <input type="checkbox" name="tandagejala[]" value="Ketidakmampuan mengabsorbsi nutrien">  FInancial tidak mencukupi<br>
                 <input type="checkbox" name="tandagejala[]" value="Stress">   Stress<br>
@@ -696,6 +697,7 @@
                 <input type="checkbox" name="polanafas[]" value="Hiperpnea atau peningkatan kedalaman pernafasan"> Hiperpnea atau peningkatan kedalaman pernafasan<br>
                 <input type="checkbox" name="polanafas[]" value="Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya">  Hiperventilasi atau peningkatan kecepatan/kedalaman/keduanya<br>
                 <input type="checkbox" name="polanafas[]" value="Hipoventilasi atau penurunan kecepatan/kedalaman/keduanya"> Hipoventilasi atau penurunan kecepatan/kedalaman/keduanya<br>
+                <input type="checkbox" name="polanafas[]" value="Kussmaul atau peningkatan laju dan kedalaman pernafasan"> Kussmaul atau peningkatan laju dan kedalaman pernafasan<br>
                 <input type="checkbox" name="polanafas[]" value="Biot atau pernafasan dalam dan dangkal disertai apnea">  Biot atau pernafasan dalam dan dangkal disertai apnea<br>
                 <input type="checkbox" name="polanafas[]" value="Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur">  Cheyne stokes atau pernafasan dalam dan dangkal, tidak teratur<br>
                 <br>
@@ -747,55 +749,93 @@
                 <table width="100%">
                     <tr valign="top">
                         <td>  PO2</td>
-                        <td> <input type="radio" name="po2"  value="Meningkat">Meningkat <br>
-                            <input type="radio" name="po2"  value="Menurun">Menurun <br>
-                            <input type="radio" name="po2"  value="Normal">Normal<hr>
-                        <td>
-                            Nilai : <br>
+                        <td colspan="2"> <input type="radio" name="po2"  value="Meningkat"> Meningkat <br>
+                            <input type="radio" name="po2"  value="Menurun"> Menurun <br>
+                            <input type="radio" name="po2"  value="Normal"> Normal
                             <div class="form-group input-group">
-                                <input  type="number" name="nilaipo2" class="form-control input-sm">
+                                <input  type="number" name="nilaipo2" placeholder="Nilai" class="form-control input-sm">
                                 <span class="input-group-addon">mmhg</span>
-                            </div>
+                            </div><hr>
                         </td>
                     </tr>
                     <tr valign="top">
                         <td>  PCO2</td>
-                        <td> <input type="radio" name="pco2"  value="Meningkat">Meningkat <br>
-                            <input type="radio" name="pco2"  value="Menurun">Menurun <br>
-                            <input type="radio" name="pco2"  value="Normal">Normal<hr>
-                        <td>
-                            Nilai : <br>
+                        <td colspan="2"> <input type="radio" name="pco2"  value="Meningkat"> Meningkat <br>
+                            <input type="radio" name="pco2"  value="Menurun"> Menurun <br>
+                            <input type="radio" name="pco2"  value="Normal"> Normal
                             <div class="form-group input-group">
-                                <input  type="number" name="nilaipco2" class="form-control input-sm">
+                                <input  type="number" placeholder="Nilai" name="nilaipco2" class="form-control input-sm">
                                 <span class="input-group-addon">mmhg</span>
-                            </div>
+                            </div><hr> 
                         </td>
                     </tr>
                     <tr valign="top">
                         <td>  pH</td>
-                        <td> <input type="radio" name="ph"  value="Meningkat"> Meningkat <br>
+                        <td colspan="2"> <input type="radio" name="ph"  value="Meningkat"> Meningkat <br>
                             <input type="radio" name="ph"  value="Menurun"> Menurun <br>
-                            <input type="radio" name="ph"  value="Normal"> Normal<hr>
-                        </td>
-                        <td>
-                            Nilai : <br>
-                            <div class="form-group input-group">
-                                <input  type="text" placeholder="Nilai pH" name="nilaiph" class="form-control input-sm">
-                            </div>
+                            <input type="radio" name="ph"  value="Normal"> Normal
+                                {{-- <input  type="number" placeholder="Nilai pH" name="nilaiph" class="form-control input-sm"> --}}
+                                
+                                    <!--<input type="number" name="nadi" class="form-control input-sm">-->
+                                    <select name="nilaiph" class="form-control input-sm" >
+                                        <option value="">- Nilai -</option>
+                                    <option value="7.20"> 7.20</option>
+                                    <option value="7.21"> 7.21</option>
+                                    <option value="7.22"> 7.22</option>
+                                    <option value="7.23"> 7.23</option>
+                                    <option value="7.24"> 7.24</option>
+                                    <option value="7.25"> 7.25</option>
+                                    <option value="7.26"> 7.26</option>
+                                    <option value="7.27"> 7.27</option>
+                                    <option value="7.28"> 7.28</option>
+                                    <option value="7.29"> 7.29</option>
+                                    <option value="7.30"> 7.30</option>
+                                    <option value="7.31"> 7.31</option>
+                                    <option value="7.32"> 7.32</option>
+                                    <option value="7.33"> 7.33</option>
+                                    <option value="7.34"> 7.34</option>
+                                    <option value="7.35"> 7.35</option>
+                                    <option value="7.36"> 7.36</option>
+                                    <option value="7.37"> 7.37</option>
+                                    <option value="7.38"> 7.38</option>
+                                    <option value="7.39"> 7.39</option>
+                                    <option value="7.40"> 7.40</option>
+                                    <option value="7.41"> 7.41</option>
+                                    <option value="7.42"> 7.42</option>
+                                    <option value="7.43"> 7.43</option>
+                                    <option value="7.44"> 7.44</option>
+                                    <option value="7.45"> 7.45</option>
+                                    <option value="7.46"> 7.46</option>
+                                    <option value="7.47"> 7.47</option>
+                                    <option value="7.48"> 7.48</option>
+                                    <option value="7.49"> 7.49</option>
+                                    <option value="7.50"> 7.50</option>
+                                    <option value="7.51"> 7.51</option>
+                                    <option value="7.52"> 7.52</option>
+                                    <option value="7.53"> 7.53</option>
+                                    <option value="7.54"> 7.54</option>
+                                    <option value="7.55"> 7.55</option>
+                                    <option value="7.56"> 7.56</option>
+                                    <option value="7.57"> 7.57</option>
+                                    <option value="7.58"> 7.58</option>
+                                    <option value="7.59"> 7.59</option>
+                                    <option value="7.60"> 7.60</option>
+                                    </select>
+                                    {{-- <span class="input-group-addon">mmgh</span> --}}
+                                
+                                <hr> 
                         </td>
                     </tr>
                     <tr valign="top">
                         <td>  Sat O2</td>
-                        <td>
+                        <td colspan="2">
                             <input type="radio" name="sato2"  value="Menurun"> Menurun <br>
-                            <input type="radio" name="sato2"  value="Normal"> Normal<hr>
-                        </td>
-                        <td>
-                            Nilai : <br>
+                            <input type="radio" name="sato2"  value="Normal"> Normal
+                            
                             <div class="form-group input-group">
                                 <input  type="number" name="nilaisato2" class="form-control input-sm">
                                 <span class="input-group-addon">%</span>
-                            </div>
+                            </div><hr> 
                         </td>
                     </tr>
                     <tr valign="top">
@@ -869,7 +909,7 @@
                 <input type="checkbox" name="keluhanberkemih[]" value="Sensasi penuh kandung kemih">  Sensasi penuh kandung kemih<br>
                 <br>
                  Volume Urin<br>
-                <input type="radio" name="urin"  value="Meningkat">Meningkat<br>
+                <input type="radio" name="urin"  value="Meningkat"> Meningkat<br>
                 <input type="radio" name="urin"  value="Menurun"> Menurun<br>
                 <input type="radio" name="urin"  value="Normal"> Normal<br>
                 <br>
@@ -889,9 +929,9 @@
                         <td>
                             <input type="radio" name="bab1"  value="team">  Tidak Teratur <br>
                             <div class="team select" style="display:none" >
-                                <input type="radio" name="bab"  value="1-2x/minggu"> <font color="black">1-2x/hari</font> <br>
-                                <input type="radio" name="bab"  value="2-3x/minggu"> 2-3x/hari  <br>
-                                <input type="radio" name="bab"  value=">3x/minggu"> >3x/hari <br>
+                                <input type="radio" name="bab"  value="1-2x/minggu"> <font color="black">1-2x/minggu</font> <br>
+                                <input type="radio" name="bab"  value="2-3x/minggu"> 2-3x/minggu  <br>
+                                <input type="radio" name="bab"  value=">3x/minggu"> >3x/minggu <br>
                               </div>
                         </td>
                     </tr>
@@ -923,7 +963,7 @@
                 <input type="checkbox" name="bablain[]" value="Konfusi">  Konfusi <br>
                 <input type="checkbox" name="bablain[]" value="depresi">   depresi<br>
                 <input type="checkbox" name="bablain[]" value="gangguan emosional">   gangguan emosional<br>
-                <input type="checkbox" name="bablain[]" value="Ketidakcukupan asupan serat"> . Ketidakcukupan asupan serat<br>
+                <input type="checkbox" name="bablain[]" value="Ketidakcukupan asupan serat"> Ketidakcukupan asupan serat<br>
                 <input type="checkbox" name="bablain[]" value="Ketidakcukupan diet">   Ketidakcukupan diet<br>
                 <input type="checkbox" name="bablain[]" value="Perubahan kebiasaan makan">  Perubahan kebiasaan makan<br>
                 <input type="checkbox" name="bablain[]" value="perubahan lingkungan">  perubahan lingkungan<br>
@@ -980,35 +1020,35 @@
                             <td> : </td>
                             <td> <input type="radio" name="mandi"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="mandi"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
-                            <td><input type="radio" name="mandi"  value="Dibantu Mandiri"> Mandiri </td>
+                            <td><input type="radio" name="mandi"  value="Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Berpakaian</td>
                             <td> : </td>
                             <td> <input type="radio" name="berpakaian"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="berpakaian"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
-                            <td><input type="radio" name="berpakaian"  value="Dibantu Mandiri"> Mandiri </td>
+                            <td><input type="radio" name="berpakaian"  value="Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>BAB/BAK</td>
                             <td> : </td>
                             <td>  <input type="radio" name="bababak"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="bababak"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
-                            <td><input type="radio" name="bababak"  value="Dibantu Mandiri"> Mandiri </td>
+                            <td><input type="radio" name="bababak"  value="Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Berhias</td>
                             <td> : </td>
                             <td> <input type="radio" name="berhias"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="berhias"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
-                            <td><input type="radio" name="berhias"  value="Dibantu Mandiri"> Mandiri </td>
+                            <td><input type="radio" name="berhias"  value="Mandiri"> Mandiri </td>
                         </tr>
                         <tr>
                             <td>Makan/Minum</td>
                             <td> : </td>
                             <td>  <input type="radio" name="makanminum"  value="Dibantu Seluruhnya"> Dibantu Seluruhnya </td>
                             <td><input type="radio" name="makanminum"  value="Dibantu Sebagian"> Dibantu Sebagian </td>
-                            <td><input type="radio" name="makanminum"  value="Dibantu Mandiri"> Mandiri </td>
+                            <td><input type="radio" name="makanminum"  value="Mandiri"> Mandiri </td>
                         </tr>
                     </table>
                 </div>
@@ -1234,7 +1274,7 @@
         }else if (hasilimt < 25 ){
             isi.interpretasi.value = "BB NORMAL";
         }else{
-            isi.interpretasi.value = "BB LEBIH/GEMMUK";
+            isi.interpretasi.value = "BB LEBIH/GEMUK";
         }
     }
 

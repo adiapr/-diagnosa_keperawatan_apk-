@@ -56,14 +56,14 @@
                     <td>TD</td>
                     <td> : </td>
                     <td>
-                        @if((($data1->sistole/$data1->diastole) <1.5) && (($data1->usia < 20) || ($data1->usia >60)))
-                        {{ $data1->sistole }}/{{ $data1->diastole }} mmHg <b>(TD Menurun)</b>
-                        @elseif((($data1->sistole/$data1->diastole) >1.5) && (($data1->usia < 20) || ($data1->usia >60)))
-                        {{ $data1->sistole }}/{{ $data1->diastole }} mmHg <b>(TD Meningkat)</b>
-                        @elseif((($data1->sistole/$data1->diastole) == 1.5) && (($data1->usia < 20) || ($data1->usia >60)))
-                        {{ $data1->sistole }}/{{ $data1->diastole }} mmHg <b>(TD Normal)</b>
-                        @else
-                        {{ $data1->sistole }}/{{ $data1->diastole }} mmHg <b>(TD Normal)</b>
+                        @if((($data1->sistole) <130) && ($data1->diastole) >70) )
+                            {{ $data1->sistole }}/{{ $data1->diastole }}<b> (TD Normal) </b>
+                        @endif
+                        @if((($data1->sistole) >130) && (($data1->diastole) >70) )
+                            {{ $data1->sistole }}/{{ $data1->diastole }}<b> (TD meningkat)</b>
+                        @endif
+                        @if(($data1->diastole) <70 )
+                            {{ $data1->sistole }}/{{ $data1->diastole }}<b> (TD menurun)</b>
                         @endif
                     </td>
                 </tr>
@@ -130,11 +130,65 @@
                         <b>TIDAK TERMASUK PASIEN PALIATIF</b>
                         @endif
 
-                        @if(($data1->ecog == 2 ) || ($data1->ecog == 3 ))
+                        @if(($data1->ecog == 2 ) || ($data1->ecog == 3 ) || ($data1->ecog == 4 ))
                         <b>TERMASUK PASIEN PALIATIF</b>
                         @endif
                     </td>
                 </tr>
+                @if ($data1->vas != '')
+                <tr>
+                    <td>VAS</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->vas }}
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->wajah != '')
+                <tr>
+                    <td>Wajah</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->wajah }}
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->posisi_tubuh != '')
+                <tr>
+                    <td>Posisi Tubuh</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->posisi_tubuh }}
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->aktivitas1 != '')
+                <tr>
+                    <td>Aktivitas</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->aktivitas1 }}
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->visiologi1 != '')
+                <tr>
+                    <td>Fisiologi I</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->visiologi1 }}
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->visiologi2 != '')
+                <tr>
+                    <td>Fisiologi II</td>
+                    <td> : </td>
+                    <td>
+                        {{ $data1->visiologi2 }}
+                    </td>
+                </tr>
+                @endif
                 <tr valign="top">
                     <td>Lokasi Nyeri</td>
                     <td> : </td>
@@ -143,6 +197,7 @@
                         <img src="https://diagnosa.mangroveleather.id/img/anatomi.jpg" alt="" width="95%">
                     </td>
                 </tr>
+                
                 <tr valign="top">
                     <td>Kualitas Nyeri</td>
                     <td> : </td>
@@ -156,14 +211,7 @@
                     <td>
                         {{$data1->frekuensi_nyeri}}
                     </td>
-                </tr>
-                <tr valign="top">
-                    <td>Lokasi Nyeri</td>
-                    <td> : </td>
-                    <td>
-                        {{$data1->kualitas_nyeri}}
-                    </td>
-                </tr>
+                </tr> 
                 <tr valign="top">
                     <td>Durasi Nyeri</td>
                     <td> : </td>
@@ -264,7 +312,7 @@
             @endif
 
             @if ($data1->dehidrasi != "")
-                <b>Edema :</b><br>
+                <b>Dehidrasi :</b><br>
                 {{ $data1->dehidrasi }}
                 <br>
             @endif
@@ -283,14 +331,17 @@
                 <br>
             @endif
 
-            {{-- <br>
+            
             @if ($data1->polanafas != "")
+            <br>
                 <b>Pola nafas:</b><br>
                 {{ $data1->polanafas }}
+                <br><br>
             @endif
-            <br> --}}
-            <br>
+            
+            
             @if ($data1->batuk != "")
+            <br>
                 <b>Batuk :</b><br>
                 {{ $data1->batuk }}
                 <br>
@@ -305,14 +356,15 @@
             @endif
 
             @if ($data1->jantung != "")
-                <b>Akral :</b><br>
+                <b>Irama Jantung :</b><br>
                 {{ $data1->jantung }}
                 <br>
                 <br>
             @endif
 
             @if ($data1->akral != "")
-                <b>Irama Jantung :</b><br>
+            <br>
+                <b>Akral :</b><br>
                 {{ $data1->akral }}
                 <br>
                 <br>
@@ -336,33 +388,43 @@
                 <b>Reflek Hepatojuglar :</b><br>
                 {{ $data1->hepatojuglar }}
                 <br>
+                <br>
             @endif
 
             <table width="100%">
                 @if ($data1->po2 != "")
                 <tr valign="top">
                     <td>PO2</td>
-                    <td> : {{ $data1->po2 }}</td>
-                    <td>Nilai : <br>
-                        {{ $data1->nilaipo2 }} mmhg
+                    <td> : </td>
+                    <td>{{ $data1->po2 }} <br>
+                        ( {{ $data1->nilaipo2 }} mmhg )
+                    </td>
+                </tr>
+                @endif
+                @if ($data1->pco2 != "")
+                <tr valign="top">
+                    <td>PCO2</td>
+                    <td> : </td>
+                    <td>{{ $data1->pco2 }} <br>
+                        ( {{ $data1->nilaipco2 }} mmhg )
                     </td>
                 </tr>
                 @endif
                 @if ($data1->ph != "")
                 <tr valign="top">
                     <td>PH</td>
-                    <td> : {{ $data1->ph}}</td>
-                    <td>Nilai : <br>
-                        {{ $data1->nilaiph }} mmhg
+                    <td> : </td>
+                    <td> {{ $data1->ph }} <br>
+                        ( {{ $data1->nilaiph }} mmhg )
                     </td>
                 </tr>
                 @endif
                 @if ($data1->sato2 != "")
                 <tr valign="top">
-                    <td>PH</td>
-                    <td> : {{ $data1->sato2}}</td>
-                    <td>Nilai : <br>
-                        {{ $data1->nilaisato2 }} mmhg
+                    <td>SAT O2</td>
+                    <td> : </td>
+                    <td>{{ $data1->sato2 }} <br>
+                        ( {{ $data1->nilaisato2 }} mmhg )
                     </td>
                 </tr>
                 @endif
@@ -380,7 +442,7 @@
                 @endif
                 @if ($data1->vtidal != "")
                 <tr valign="top">
-                    <td>93. Volume Tidal</td>
+                    <td>Volume Tidal</td>
                     <td colspan="2"> : {{ $data1->vtidal }}</td>
                 </tr>
                 @endif
@@ -463,6 +525,13 @@
                 <br>
             @endif
 
+            @if ($data1->suaranafas != "")
+                <b>Suara Nafas :</b><br>
+                {{ $data1->suaranafas }}
+                <br>
+                <br>
+            @endif
+
             @if ($data1->reproduksilain != "")
                 <b>Tanda dan Gejala Lainnya :</b><br>
                 {{ $data1->reproduksilain }}
@@ -470,35 +539,37 @@
                 <br>
             @endif
 
-           
-            <table width="100%" class="table">
-                <tr>
-                    <td>Mandi</td>
-                    <td> : </td>
-                    <td>{{ $data1->mandi }}</td>
-                </tr>
-                <tr>
-                    <td>Berpakaian</td>
-                    <td> : </td>
-                    <td>{{ $data1->berpakaian }}</td>
-                </tr>
-                <tr>
-                    <td>BAB/BAK</td>
-                    <td> : </td>
-                    <td>{{ $data1->bababak }}</td>
-                </tr>
-                <tr>
-                    <td>Berhias</td>
-                    <td> : </td>
-                    <td>{{ $data1->berhias }}</td>
-                </tr>
-                <tr>
-                    <td>Makan/Minum</td>
-                    <td> : </td>
-                    <td>{{ $data1->makanminum }}</td>
-                </tr>
-            </table>
-            <br>
+           @if (($data1->mandi != '') || ($data1->berpakaian != '') || ($data1->bababak != '') || ($data1->berhias != '') || ($data1->makanminum != '') )
+           <table width="100%" class="table">
+            <tr>
+                <td>Mandi</td>
+                <td> : </td>
+                <td>{{ $data1->mandi }}</td>
+            </tr>
+            <tr>
+                <td>Berpakaian</td>
+                <td> : </td>
+                <td>{{ $data1->berpakaian }}</td>
+            </tr>
+            <tr>
+                <td>BAB/BAK</td>
+                <td> : </td>
+                <td>{{ $data1->bababak }}</td>
+            </tr>
+            <tr>
+                <td>Berhias</td>
+                <td> : </td>
+                <td>{{ $data1->berhias }}</td>
+            </tr>
+            <tr>
+                <td>Makan/Minum</td>
+                <td> : </td>
+                <td>{{ $data1->makanminum }}</td>
+            </tr>
+        </table>
+        <br> 
+           @endif
+            
             @if ($data1->kebersihandiri != "")
                 <b>Masalah Kebersihan Diri :</b><br>
                 {{ $data1->kebersihandiri }}

@@ -157,7 +157,7 @@
 @if (
         (
             // 34
-            ($data1->interpretasi != "")
+            ($data1->interpretasi == "BB KURANG/KURUS")
         )
     )
     <div class="row">
@@ -264,7 +264,7 @@
         (
             // 37
             ($data1->peristaltik != "") &&
-            (str_contains($data1->tambahanlain, 'Megeluh Nyeri')) &&
+            (str_contains($data1->tambahanlain, 'Mengeluh Nyeri')) &&
             (str_contains($data1->tandagejala, 'Mengungkapkan flatus tidak ada'))
         )
     )
@@ -340,7 +340,7 @@
         ) &&
         (
             // 1 menurun
-            (($data1->sistole/$data1->diastole) <1.5) && (($data1->usia < 20) || ($data1->usia >60))
+            ($data1->diastole <70)
         ) &&
         (
             (str_contains($data1->tandagejala, 'Nadi teraba lemah')) &&
@@ -363,6 +363,7 @@
                     <div id="hipovolemia" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.hipovolemia')
+                            @include('resume.sop.edukasidietpasien')
                         </div>
                     </div>
                 </div>
@@ -447,6 +448,7 @@
                     <div id="hipervolemia" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.hipervolemia')
+                            @include('resume.sop.edukasidietpasien')
                         </div>
                     </div>
                 </div>
@@ -490,10 +492,10 @@
 {{-- ---------------------------- Kesiapan peningkatan keseimbangan cairan ------------------------------------ --}}
 @if (
         (
-            (str_contains($data1->tandagejala, 'Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan')) &&
+            (str_contains($data1->tandagejala, 'Mengekspresikan keinginan untuk meningkatkan keseimbangan cairan,Asupan makanan dan cairan adekuat untuk kebutuhan harian')) &&
             ($data1->membranmukosa == 'Lembab') &&
             ($data1->dehidrasi == 'Tidak') &&
-            ($data1->crt == '> 3 Detik') &&
+            ($data1->crt == '< 3 Detik') &&
             (str_contains($data1->tandagejala, 'Asupan makanan dan cairan adekuat untuk kebutuhan harian'))
         )
     )
@@ -541,6 +543,7 @@
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanmenelan')
                             @include('resume.sop.progressivemusclerelaxation')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -576,6 +579,7 @@
                     <div id="gangguaneliminasiurin" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguaneliminasiurin')
+                            @include('resume.sop.pengambilanspesimenurin')
                         </div>
                     </div>
                 </div>
@@ -607,6 +611,7 @@
                     <div id="diare" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.diare')
+                            @include('resume.sop.boweltraining')
                         </div>
                     </div>
                 </div>
@@ -641,6 +646,7 @@
                     <div id="inkontinensiaurinrefleks" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.inkontinensiaurinrefleks')
+                            @include('resume.sop.bladdertraining')
                         </div>
                     </div>
                 </div>
@@ -670,6 +676,7 @@
                     <div id="inkontinensiafekal" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.inkontinensiafekal')
+                            @include('resume.sop.boweltraining')
                         </div>
                     </div>
                 </div>
@@ -697,6 +704,7 @@
                     <div id="inkontinensiaurinurgensi" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.inkontinensiaurinurgensi')
+                            @include('resume.sop.bladdertraining')
                         </div>
                     </div>
                 </div>
@@ -724,6 +732,7 @@
                     <div id="inkontinensiaurinfungsional" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.inkontinensiaurinfungsional')
+                            @include('resume.sop.bladdertraining')
                         </div>
                     </div>
                 </div>
@@ -754,6 +763,7 @@
                     <div id="retensiurin" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.retensiurin')
+                            @include('resume.sop.prosedurepijatrefleksi')
                         </div>
                     </div>
                 </div>
@@ -782,12 +792,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#konsitipasi">Konsitipasi</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#konsitipasi">Konstipasi</a>
                         </h4>
                     </div>
                     <div id="konsitipasi" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.konsitipasi')
+                            @include('resume.sop.boweltraining')
                         </div>
                     </div>
                 </div>
@@ -834,6 +845,7 @@
                     <div id="risikokonstipasi" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.risikokonstipasi')
+                            @include('resume.sop.edukasidietpasien')
                         </div>
                     </div>
                 </div>
@@ -862,6 +874,7 @@
                     <div id="disfungsiseksual" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.disfungsiseksual')
+                            @include('resume.sop.menejemenstres')
                         </div>
                     </div>
                 </div>
@@ -934,6 +947,7 @@
                     <div id="polaseksualtidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.polaseksualtidakefektif')
+                            @include('resume.sop.menejemenstres')
                         </div>
                     </div>
                 </div>
@@ -969,6 +983,7 @@
                     <div id="bersihanjalannafastidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.bersihanjalannafastidakefektif')
+                            @include('resume.sop.suction')
                         </div>
                     </div>
                 </div>
@@ -982,7 +997,7 @@
 @if (
         (
             ($data1->polanafas == 'Dypsnea atau Sesak nafas') &&
-            ($data1->pco2 == 'Menurun') &&
+            (($data1->pco2 == 'Menurun') || ($data1->pco2 == 'Meningkat')) &&
             ($data1->po2 == 'Menurun') &&
             ($data1->nadi >100)
         ) &&
@@ -1010,6 +1025,7 @@
                     <div id="gangguanpertukarangas" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanpertukarangas')
+                            @include('resume.sop.pemasanganoksigen')
                         </div>
                     </div>
                 </div>
@@ -1031,8 +1047,8 @@
             ($data1->batuk == 'Tidak mampu batuk')
          ) &&
         (
-            ($data1->keluhan == 'Sulit Menelan') ||
-            ($data1->suaranafas == 'Tidak berniat makan')
+            (str_contains($data1->keluhan, 'Sulit Menelan')) ||
+            (str_contains($data1->keluhan, 'Tidak berniat makan'))
          ) &&
         (
             ($data1->aktivitas == 'Mengeluh sulit menggerakkan ekstremitas')||
@@ -1095,6 +1111,7 @@
                     <div id="risikoperfusiperifertidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.risikoperfusiperifertidakefektif')
+                            @include('resume.sop.edukasidietpasien')
                         </div>
                     </div>
                 </div>
@@ -1108,7 +1125,7 @@
 {{-- ---------------------------- Perfusi Perifer Tidak Efektif ------------------------------------ --}}
 @if (
         (
-            ($data1->crt == '"> 3 Detik') &&
+            ($data1->crt == '> 3 Detik') &&
             ($data1->tandagejala == 'Nadi teraba lemah') &&
             ($data1->akral == 'Dingin') &&
             ($data1->warnakulit == 'Pucat')
@@ -1158,6 +1175,7 @@
                     <div id="ganguanventilasispontan" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.ganguanventilasispontan')
+                            @include('resume.sop.pemasanganoksigen')
                         </div>
                     </div>
                 </div>
@@ -1174,9 +1192,11 @@
             ($data1->rr >24)
         )&&
         (
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas') &&
+            (str_contains($data1->polanafas, 'Dypsnea atau Sesak nafas')) &&
             ($data1->obn != '') &&
-            ($data1->polanafas == 'Biot atau pernafasan dalam dan dangkal disertai apnea')
+            (str_contains($data1->polanafas, 'Kussmaul atau peningkatan laju dan kedalaman pernafasan')) &&
+            (str_contains($data1->polanafas, 'Biot atau pernafasan dalam dan dangkal disertai apnea')) 
+            
         )
     )
     <div class="row">
@@ -1191,6 +1211,7 @@
                     <div id="polanafastidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.polanafastidakefektif')
+                            @include('resume.sop.progressivemusclerelaxation')
                         </div>
                     </div>
                 </div>
@@ -1210,8 +1231,8 @@
             ($data1->nadi <60)
         )&&
         (
-            ($data1->edema == 'Ya')||
-            ($data1->aktivitas == 'Mengeluh Lelah')||
+            ($data1->edema == 'Ya') &&
+            ($data1->aktivitas == 'Mengeluh Lelah')&&
             ($data1->jvp == 'Meningkat')
         )&&
         (
@@ -1222,14 +1243,11 @@
             ($data1->polanafas == 'Dypsnea atau Sesak nafas')
         )&&
         (
-            (($data1->sistole/$data1->diastole) <1.5) && (($data1->usia < 20) || ($data1->usia >60)) ||
             ($data1->tandagejala == 'Nadi teraba lemah')||
             ($data1->crt == '> 3 Detik')||
             ($data1->warnakulit == 'Pucat')||
             ($data1->polanafas == 'Ortopnea atau sulit bernafas saat berbaring')||
-            ($data1->batuk == 'Efektif')||
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')||
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')
+            ($data1->batuk == 'Efektif')
         )
     )
     <div class="row">
@@ -1244,6 +1262,8 @@
                     <div id="risikopenurunancurahjantung" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.risikopenurunancurahjantung')
+                            @include('resume.sop.edukasidietpasien')
+                            @include('resume.sop.teknikrelaksasinafasdalam')
                         </div>
                     </div>
                 </div>
@@ -1252,6 +1272,8 @@
     </div>
 @endif
 {{-- ------------------------------------------------------------------------------------- --}}
+
+
 
 {{-- ---------------------------- penurunan curah jantung ------------------------------------ --}}
 @if (
@@ -1272,70 +1294,15 @@
             ($data1->cvp == 'Menurun')
         )&&
         (
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')
+            (str_contains($data1->polanafas, 'Dypsnea atau Sesak nafas'))
         )&&
         (
             (($data1->sistole/$data1->diastole) <1.5) && (($data1->usia < 20) || ($data1->usia >60)) &&
             ($data1->tandagejala == 'Nadi teraba lemah')&&
             ($data1->crt == '> 3 Detik')&&
             ($data1->warnakulit == 'Pucat')&&
-            ($data1->polanafas == 'Ortopnea atau sulit bernafas saat berbaring')||
-            ($data1->batuk == 'Efektif')&&
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')&&
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')
-        )
-    )
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#penurunancurahjantung">Penurunan curah jantung</a>
-                        </h4>
-                    </div>
-                    <div id="penurunancurahjantung" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            @include('resume.diagnosa.penurunancurahjantung')
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endif
-{{-- ------------------------------------------------------------------------------------- --}}
-
-{{-- ---------------------------- penurunan curah jantung ------------------------------------ --}}
-@if (
-        (
-            ($data1->jantung == 'Irreguler')
-        ) &&
-        (
-            ($data1->nadi >100) ||
-            ($data1->nadi <60)
-        )&&
-        (
-            ($data1->edema == 'Ya')&&
-            ($data1->aktivitas == 'Mengeluh Lelah')&&
-            ($data1->jvp == 'Meningkat')
-        )&&
-        (
-            ($data1->cvp == 'Meningkat') ||
-            ($data1->cvp == 'Menurun')
-        )&&
-        (
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')
-        )&&
-        (
-            (($data1->sistole/$data1->diastole) <1.5) && (($data1->usia < 20) || ($data1->usia >60)) &&
-            ($data1->tandagejala == 'Nadi teraba lemah')&&
-            ($data1->crt == '> 3 Detik')&&
-            ($data1->warnakulit == 'Pucat')&&
-            ($data1->polanafas == 'Ortopnea atau sulit bernafas saat berbaring')||
-            ($data1->batuk == 'Efektif')&&
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')&&
-            ($data1->polanafas == 'Dypsnea atau Sesak nafas')
+            (str_contains($data1->polanafas, 'Ortopnea atau sulit bernafas saat berbaring')) ||
+            ($data1->batuk == 'Efektif')
         )
     )
     <div class="row">
@@ -1366,8 +1333,8 @@
             (str_contains($data1->tandagejala, 'Efek agen farmakologis')) &&
             (str_contains($data1->tandagejala, 'Efek prosedur pembedahan')) &&
             (str_contains($data1->berpindahlain, 'kurang terpapar informasi tentang pecegahan pendarahan')) &&
-            (str_contains($data1->berpindahlain, 'aneurisma/proses keganasan')) &&
-            (str_contains($data1->berpindahlain, 'traumayang mengancam nyawa'))
+            ((str_contains($data1->berpindahlain, 'aneurisma/proses keganasan')) || ((str_contains($data1->berpindahlain, 'traumayang mengancam nyawa')))) 
+            
 
         )
     )
@@ -1413,9 +1380,9 @@
                             <a data-toggle="collapse" data-parent="#accordion" href="#gangguanmemori">Gangguan memori</a>
                         </h4>
                     </div>
-                    <div id="risikopendarahan" class="panel-collapse collapse">
+                    <div id="gangguanmemori" class="panel-collapse collapse">
                         <div class="panel-body">
-                            @include('resume.diagnosa.risikopendarahan')
+                            @include('resume.diagnosa.gangguanmemori')
                         </div>
                     </div>
                 </div>
@@ -1447,6 +1414,7 @@
                     <div id="konfusiakut" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.konfusiakut')
+                            @include('resume.sop.terapihealingtouch')
                         </div>
                     </div>
                 </div>
@@ -1481,6 +1449,8 @@
                     <div id="konfusikronis" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.konfusikronis')
+                            @include('resume.sop.terapimusik')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -1510,6 +1480,8 @@
                     <div id="defisitperawatandiri" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.defisitperawatandiri')
+                            @include('resume.sop.terapiseni')
+                            @include('resume.sop.defisitperawatandiri')
                         </div>
                     </div>
                 </div>
@@ -1538,6 +1510,8 @@
                     <div id="intoleransiaktivitas" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.intoleransiaktivitas')
+                            @include('resume.sop.terapimusik')
+                            @include('resume.sop.progressivemusclerelaxation')
                         </div>
                     </div>
                 </div>
@@ -1604,6 +1578,7 @@
                     <div id="keletihan" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.keletihan')
+                            @include('resume.sop.rom')
                         </div>
                     </div>
                 </div>
@@ -1633,6 +1608,8 @@
                     <div id="gangguanmobilitasfisik" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanmobilitasfisik')
+                            @include('resume.sop.progressivemusclerelaxation')
+                            @include('resume.sop.prosedurepijatrefleksi')
                         </div>
                     </div>
                 </div>
@@ -1664,6 +1641,9 @@
                     <div id="gangguanpolatidur" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanpolatidur')
+                            @include('resume.sop.terapimusik')
+                            @include('resume.sop.progressivemusclerelaxation')
+                            @include('resume.sop.prosedurepijatrefleksi')
                         </div>
                     </div>
                 </div>
@@ -1691,6 +1671,7 @@
                     <div id="gangguanintegritaskulit" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanintegritaskulit')
+                            @include('resume.sop.perawatankulit')
                         </div>
                     </div>
                 </div>
@@ -1706,9 +1687,7 @@
             (str_contains($data1->berpindahlain, 'Peningkatan paparan organisme patogen lingkungan'))&&
             (str_contains($data1->berpindahlain, 'Ketidakadekuatan pertahanan tubuh primer/sekunder'))&&
             (str_contains($data1->tandagejala, 'Efek prosedur pembedahan'))&&
-            (str_contains($data1->tandagejala, 'Ketidakmampuan mengabsorbsi nutrien'))&&
-            (str_contains($data1->tandagejala, 'Financial tidak mencukupi'))&&
-            ($data1->neurosensor == 'Fungsi kognitif berubah progresif')
+            (str_contains($data1->tandagejala, 'Ketidakmampuan mengabsorbsi nutrien')) 
         ) &&
         (
             ($data1->ph == 'Meningkat') ||
@@ -1753,8 +1732,8 @@
             ($data1->kesadaran == 'Koma')
         )&&
         (
-            ($data1->tandagejala == 'Efek agen farmakologis')||
-            ($data1->tandagejala == 'Efek prosedur pembedahan')
+            (str_contains($data1->tandagejala, 'Efek agen farmakologis')) ||
+            (str_contains($data1->tandagejala, 'Efek prosedur pembedahan'))
         )&&
         (
             ($data1->neurosensor == 'Fungsi kognitif berubah progresif')
@@ -1830,7 +1809,6 @@
             (str_contains($data1->riwayat, 'Trauma'))&&
             (str_contains($data1->riwayat, 'Stroke'))&&
             (str_contains($data1->riwayat, 'Prosedur Invasif'))&&
-            (str_contains($data1->tandagejala, 'Financial tidak mencukupi'))&&
             (str_contains($data1->tandagejala, 'Ketidakmampuan mengabsorbsi nutrien'))&&
             (str_contains($data1->tandagejala, 'Efek agen farmakologis'))&&
             (str_contains($data1->aktivitas, 'Mengeluh sulit menggerakkan ekstremitas'))&&
@@ -1881,6 +1859,7 @@
                     <div id="ketidakmampuankopingkeluarga" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.ketidakmampuankopingkeluarga')
+                            @include('resume.sop.terapikeluarga')
                         </div>
                     </div>
                 </div>
@@ -1911,6 +1890,7 @@
                     <div id="penurunankopingkeluarga" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.penurunankopingkeluarga')
+                            @include('resume.sop.terapikeluarga')
                         </div>
                     </div>
                 </div>
@@ -1939,6 +1919,7 @@
                     <div id="ketidakberdayaan" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.ketidakberdayaan')
+                            @include('resume.sop.terapikognitif')
                         </div>
                     </div>
                 </div>
@@ -1974,6 +1955,9 @@
                     <div id="hdrkronis" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.hdrkronis')
+                            @include('resume.sop.terapimusik')
+                            @include('resume.sop.terapiseni')
+                            @include('resume.sop.terapikognitif')
                         </div>
                     </div>
                 </div>
@@ -1991,7 +1975,7 @@
             (str_contains($data1->masalahdukungan, 'Menolak penilaian positif tentang diri sendiri'))&&
             (str_contains($data1->masalahdukungan, 'Enggan mencoba hal baru'))&&
             (str_contains($data1->masalahdukungan, 'Berjalan menunduk/Postur tubuh menunduk'))&&
-            (str_contains($data1->masalahdukungan, 'Berbicara pelan dan lirih '))&&
+            (str_contains($data1->masalahdukungan, 'Berbicara pelan dan lirih'))&&
             (str_contains($data1->masalahdukungan, 'Menolak berinteraksi dengan orang lain'))
         )
     )
@@ -2007,6 +1991,8 @@
                     <div id="hdrsituasional" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.hdrsituasional')
+                            @include('resume.sop.terapiseni')
+                            @include('resume.sop.terapikognitif')
                         </div>
                     </div>
                 </div>
@@ -2034,6 +2020,7 @@
                     <div id="keputusasaan" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.keputusasaan')
+                            @include('resume.sop.terapikognitif')
                         </div>
                     </div>
                 </div>
@@ -2062,6 +2049,7 @@
                     <div id="gangguanproseskeluarga" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanproseskeluarga')
+                            @include('resume.sop.terapikeluarga')
                         </div>
                     </div>
                 </div>
@@ -2092,6 +2080,7 @@
                     <div id="kopingdefensif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.kopingdefensif')
+                            @include('resume.sop.terapireminiscence')
                         </div>
                     </div>
                 </div>
@@ -2124,6 +2113,7 @@
                     <div id="penampilanperantidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.penampilanperantidakefektif')
+                            @include('resume.sop.terapikeluarga')
                         </div>
                     </div>
                 </div>
@@ -2181,6 +2171,8 @@
                     <div id="gangguankomunikasiverbal" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguankomunikasiverbal')
+                            @include('resume.sop.terapihealingtouch')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -2211,6 +2203,7 @@
                     <div id="gangguaninteraksisosial" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguaninteraksisosial')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -2240,6 +2233,7 @@
                     <div id="isolasisosial" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.isolasisosial')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -2269,6 +2263,9 @@
                     <div id="kopingtidakefektif" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.kopingtidakefektif')
+                            @include('resume.sop.hipnoterapi')
+                            @include('resume.sop.progressivemusclerelaxation')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -2305,6 +2302,7 @@
                     <div id="risikoketidakberdayaan" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.risikoketidakberdayaan')
+                            @include('resume.sop.terapiseni')
                         </div>
                     </div>
                 </div>
@@ -2424,6 +2422,7 @@
                     <div id="berduka" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.berduka')
+                            @include('resume.sop.terapihealingtouch')
                         </div>
                     </div>
                 </div>
