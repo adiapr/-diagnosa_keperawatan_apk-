@@ -18,7 +18,7 @@
             <ul class="dropdown-menu dropdown-user" style="color:blue">
                 @if ( Auth::user()->email == 'admin@gmail.com')
                     <li>
-                        <a href="#"><i class="fa fa-plus"></i> Tambah User</a>
+                        <a href="/pengguna"><i class="fa fa-users"></i> Data Pengguna</a>
                     </li>    
                 @endif
                 

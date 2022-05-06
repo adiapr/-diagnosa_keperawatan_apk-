@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PengkajianController;
 use Illuminate\Support\Facades\Auth;
@@ -38,3 +39,8 @@ Route::post('updateUser/{id}',  [PengkajianController::class, 'update_akun']);
 
 Route::get('/laporan/{id}',          [LaporanController::class, 'index']);
 Route::get('/exportlaporan/{id}',    [LaporanController::class, 'export']);
+
+Route::get('/pengguna',         [HomeController::class, 'pengguna_index']);
+Route::get('/verifikasi/{id}',  [HomeController::class, 'pengguna_verifikasi']);
+Route::get('/tolak/{id}',       [HomeController::class, 'pengguna_tolak']);
+Route::post('/hapusUser/{id}',   [HomeController::class, 'pengguna_hapus']);

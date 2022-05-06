@@ -16,31 +16,33 @@
                 <table class="table table-hover">
                     <tr>
                         <th>#</th>
-                        <th>Nama Pasien</th>
-                        <th>Usia</th>
-                        <th>Tanggal Lahir</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Ruang Rawat</th>
-                        <th>Tanggal Pengkajian</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Status</th>
                         <th>Aksi</th>
                     </tr>
-                    @foreach ($resume as $data)
+                    @foreach ($user as $data)
                         <tr>
                             <td>{{ ++$no }}</td>
                             <td>
-                                <a href="#" data-toggle="modal" data-target="#show{{ $data->id }}"><b>{{ $data->namapasien }}</b></a>
+                                <a href="#" data-toggle="modal" data-target="#show{{ $data->id }}"><b>{{ $data->name }}</b></a>
                             </td>
-                            <td>{{ $data->usia }} th</td>
-                            <td>{{ $data->tgl_lahir }}</td>
-                            <td>{{ $data->jenis_kelamin }}</td>
-                            <td>{{ $data->ruang_rawat }}</td>
-                            <td>{{ $data->tgl_pengkajian }}</td>
+                            <td>{{ $data->email }}</td>
                             <td>
-                                <form action="/hapusData/{{ $data->id }}" method="post">
+                                @if ($data->verify == 0)
+                                    <button class="btn btn-alert-warning btn-sm">Belum Terverifikasi</button>
+                                @endif
+                                @if ($data->verify == 1)
+                                    <button class="btn btn-primary btn-sm">Terverifikasi</button>
+                                @endif
+                            </td>
+                            <td>
+                                <form action="/hapusUser/{{ $data->id }}" method="post">
                                     @csrf
+                                    <a href="/verifikasi/{{ $data->id }}" class="btn btn-success btn-sm"><i class="fa fa-check-circle"></i> Verifikasi</a>
+                                    <a href="/tolak/{{ $data->id }}" class="btn btn-warning btn-sm"><i class="fa fa-times-circle"></i> Tolak</a>
                                     <button class="btn btn-danger btn-sm" onClick="return confirm('Yakin mau dihapus ?')"><i class="fa fa-trash"></i> Hapus</button>
-                                    <a href="/laporan/{{ $data->id }}" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> Lihat</a>
-                                    <a href="/exportlaporan/{{ $data->id }}" class="btn btn-success btn-sm"><i class="fa fa-file-pdf-o"></i> Download</a>
+                                    
                                 </form>
                             </td>
                         </tr>
@@ -53,7 +55,7 @@
         </div>
         <div class="col-md-6">
             <div>
-                {{ $resume->links() }}
+                {{ $user->links() }}
             </div>
             <br>
             <br>

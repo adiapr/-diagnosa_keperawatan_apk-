@@ -76,6 +76,10 @@
                                     <a href="/login">Login disini</a>
 
                                 </p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
                             </div>
                         </div>
                     </form>

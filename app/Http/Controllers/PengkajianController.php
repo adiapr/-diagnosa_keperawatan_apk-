@@ -12,6 +12,7 @@ class PengkajianController extends Controller
 {
     public function __construct()
     {
+        $this->middleware(['cekStatus']);
         $this->middleware('auth');
     }
 
