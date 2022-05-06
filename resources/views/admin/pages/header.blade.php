@@ -15,7 +15,13 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-user fa-fw"></i> {{ Auth::user()->name }}  <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu dropdown-user">
+            <ul class="dropdown-menu dropdown-user" style="color:blue">
+                @if ( Auth::user()->email == 'admin@gmail.com')
+                    <li>
+                        <a href="#"><i class="fa fa-plus"></i> Tambah User</a>
+                    </li>    
+                @endif
+                
                 <li class="divider"></li>
                 <li>
                     <a href="{{ route('logout') }}"

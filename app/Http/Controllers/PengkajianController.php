@@ -48,6 +48,7 @@ class PengkajianController extends Controller
         $pengkajian->ecog                = $request->ecog;
         $pengkajian->vas                 = $request->vas;
         $pengkajian->lok_nyeri           = $request->lokasi_nyeri;
+        $pengkajian->peristaltik                = $request->peristaltik;
         $pengkajian->kualitas_nyeri     = $request->kualitasnyeri;
         $pengkajian->frekuensi_nyeri     = $request->frekuensinyeri;
         $pengkajian->durasi_nyeri        = $request->durasinyeri;
@@ -100,6 +101,8 @@ class PengkajianController extends Controller
         $pengkajian->hepatojuglar        = $request->hepatojuglar;
         $pengkajian->po2                 = $request->po2;
         $pengkajian->nilaipo2            = $request->nilaipo2;
+        $pengkajian->pco2                 = $request->pco2;
+        $pengkajian->nilaipco2            = $request->nilaipco2;
         $pengkajian->ph                  = $request->ph;
         $pengkajian->nilaiph             = $request->nilaiph;
         $pengkajian->sato2               = $request->sato2;
@@ -153,9 +156,10 @@ class PengkajianController extends Controller
         $pengkajian->tinggalbersama      = $request->tinggalbersama;
         // $pengkajian->adakahtergantung    = $request->adakahtergantung;
 
-        // if(isset($request->masalahkeluarga)){
-        //     $pengkajian->masalahkeluarga     = $request->masalahkeluarga;
-        // }
+        if(isset($request->masalahkeluarga)){
+            $pengkajian->masalahkeluarga     = implode(',' , $request->masalahkeluarga);
+        }
+
         $pengkajian->dukunganlain        = $request->dukunganlain;
         $pengkajian->butuhdukungan       = $request->butuhdukungan;
         if(isset($request->masalahdukungan)){
@@ -199,11 +203,21 @@ class PengkajianController extends Controller
     public function pengkajian_resume(){
         Paginator::useBootstrap();
         $user_id = Auth::user()->id;
+        $user_email = Auth::user()->email;
         $batas      = 10;
-        $jmldata    = Pengkajian::where('user_id', $user_id)->count();
-        $resume     = Pengkajian::where('user_id', $user_id)
-                        ->orderBy('id','desc')
-                        ->paginate($batas);
+
+        if($user_email == 'admin@gmail.com'){
+            $jmldata    = Pengkajian::count();
+            $resume     = Pengkajian::orderBy('id','desc')
+                            ->paginate($batas);    
+        } else {
+            $jmldata    = Pengkajian::where('user_id', $user_id)->count();
+            $resume     = Pengkajian::where('user_id', $user_id)
+                            ->orderBy('id','desc')
+                            ->paginate($batas);
+        }
+
+        
         $no         = $batas*($resume->currentPage() -1);
         // alert()->success('Data Resume','Tekan OK untuk melanjutkan');
         return view('admin.resume', compact('jmldata', 'resume', 'no'));
