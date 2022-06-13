@@ -67,7 +67,6 @@
   </script>
 
 
-//   script 2
 <script>
 		var ctx = document.getElementById("myChart1").getContext('2d');
 		var myChart1 = new Chart(ctx, {

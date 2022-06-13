@@ -7,7 +7,11 @@
 
 
     <h4>Luaran Keperawatan</h4>
-    Setelah dilakukan Intervensi Keperawatan diharapkan Tingkat nyeri menurun dengan kriteria hasil :
+    Setelah dilakukan
+    intervensi keperawatan
+    diharapkan toleransi
+    aktivitas meningkat
+    dengan kriteria hasil:
     <ol>
         <li>Frekuensi nadi
             meningkat</li>

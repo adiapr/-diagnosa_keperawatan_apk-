@@ -912,6 +912,93 @@
                 <input type="radio" name="urin"  value="Meningkat"> Meningkat<br>
                 <input type="radio" name="urin"  value="Menurun"> Menurun<br>
                 <input type="radio" name="urin"  value="Normal"> Normal<br>
+                {{-- <a href="#">*Cara Perhitungan</a><br> --}}
+                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-eye"></i> Cara perhitungan</button><br>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Cara Perhitungan</h5>
+                        </div>
+                        <div class="modal-body">
+                          <b>Balance cairan</b><br>
+                          Balance cairan atau keseimbangan cairan adalah keseimbangan antara pemasukan cairan
+                        (intake) dan pengeluaran cairan (output). Masukan cairan orang dewasa normalnya adalah
+                        1500 ml sampai 3500 ml. Pengeluaran cairan orang dewasa normalnya adalah 1500 ml.
+                        Pada kondisi normal, orang dewasa yang sehat akan memproduksi urine setiap jamnya sebanyak 0,5-1,5 cc per kilogram (kg) berat badan. Artinya, jika memiliki berat 50 kg, maka dalam satu jam tubuh akan menghasilkan urine sebanyak 25-75 cc. Sehingga volume urin normal dalam 24 jam berkisar antara 600-1800 cc.<br> <br>
+                            <b>Rumus Balance Cairan</b><br>
+                            Intake / cairan masuk = Output / cairan keluar + IWL (Insensible Water Loss)
+                            <ol>
+                                <li>Intake / Cairan Masuk : mulai dari cairan infus, minum, kandungan cairan dalam
+                                    makanan pasien, volume obat-obatan, termasuk obat suntik, obat yang di drip, albumin dll.</li>
+                                <li>Output / Cairan keluar : urine dalam 24 jam, jika pasien dipasang kateter maka hitung
+                                    dalam ukuran di urobag, jka tidak terpasang maka pasien harus menampung urinenya
+                                    sendiri, biasanya ditampung di botol air mineral dengan ukuran 1,5 liter, kemudian feses.</li>
+                                <li>IWL (insensible water loss ) : jumlah cairan keluarnya tidak disadari dan sulit
+                                    diitung, yaitu jumlah keringat, uap hawa nafas.</li>
+                            </ol>
+                            <br>
+                            <b>Cara Menghitung Balance Cairan:</b>
+                            <table>
+                                <tr valign="top">
+                                    <td>Input Cairan : Air (makan+minum)</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>Cairan Infus</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>Terapi Injeksi</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>Air Metabolisme</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc<br>
+                                    (hitung AM=5 cc/kgBB/hari)</td>
+                                </tr valign="top">
+                                <tr>
+                                    <td>Output Cairan : Urin</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr valign="top">
+                                <tr valign="top">
+                                    <td>Feses</td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>Muntah/perdarahan/<br>
+                                        cairan drainage luka/<br>
+                                        cairan NGT terbuka </td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td>Insensible Water Loss (IWL) </td>
+                                    <td> &nbsp; = &nbsp; </td>
+                                    <td>.................... cc<br>
+                                        (hitung IWL = 15 cc/kgBB/hari)</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            Jika ada kenaikan suhu, maka untuk menghitung output dari IWL menggunakan rumus:<br>
+                            IWL peningkatan suhu = <br>
+                            IWL normal + 200 (suhu tinggi-36,8oC) = ............... cc
+                            <br>
+                            <b>Balance cairan = intake cairan – output cairan</b>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Kembali</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
                 <br>
                 <table width="100%">
                     <tr valign="top">
@@ -937,13 +1024,13 @@
                     </tr>
                     <tr valign="top">
                         <td><hr>Konsistensi</td>
-                        <td> : </td>
+                        <td>  </td>
                         <td colspan="2"><hr>
-                            <input type="radio" name="konsistensi"  value="Keras">  Keras <br>
-                            <input type="radio" name="konsistensi"  value="Lunak">   Lunak<br>
-                            <input type="radio" name="konsistensi"  value="Cair">   Cair <br>
-                            <input type="radio" name="konsistensi"  value="Lendir/Darah">  Lendir/Darah <br>
-                            <input type="radio" name="konsistensi"  value="Normal"> Normal <hr>
+                            <input type="checkbox" name="konsistensi[]"  value="Keras">  Keras <br>
+                            <input type="checkbox" name="konsistensi[]"  value="Lunak">   Lunak<br>
+                            <input type="checkbox" name="konsistensi[]"  value="Cair">   Cair <br>
+                            <input type="checkbox" name="konsistensi[]"  value="Lendir/Darah">  Lendir/Darah <br>
+                            <input type="checkbox" name="konsistensi[]"  value="Normal"> Normal <hr>
                         </td>
                     </tr>
                     <tr valign="top">

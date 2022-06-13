@@ -1383,6 +1383,7 @@
                     <div id="gangguanmemori" class="panel-collapse collapse">
                         <div class="panel-body">
                             @include('resume.diagnosa.gangguanmemori')
+                            @include('resume.sop.terapiokupasi')
                         </div>
                     </div>
                 </div>
@@ -1528,11 +1529,11 @@
             ($data1->nadi >100)
         ) &&
         (
-            ($data1->gejalalain == 'Gangguan Sirkulasi') ||
-            ($data1->gejalalain == 'Gangguan Pernapasan') ||
-            ($data1->gejalalain == 'Ketidakbugaran Fisik') ||
-            ($data1->gejalalain == 'Riwayat Intoleransi Sebelumnya') ||
-            ($data1->gejalalain == 'Tidak Berpengalaman Dengan Suatu Aktivitas')
+            (str_contains($data1->gejalalain, 'Gangguan Sirkulasi')) ||
+            (str_contains($data1->gejalalain,'Gangguan Pernapasan')) ||
+            (str_contains($data1->gejalalain ,'Ketidakbugaran Fisik')) ||
+            (str_contains($data1->gejalalain, 'Riwayat Intoleransi Sebelumnya')) ||
+            (str_contains($data1->gejalalain, 'Tidak Berpengalaman Dengan Suatu Aktivitas'))
         )
     )
     <div class="row">

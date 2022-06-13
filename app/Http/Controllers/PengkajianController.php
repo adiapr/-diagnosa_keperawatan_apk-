@@ -121,7 +121,11 @@ class PengkajianController extends Controller
         }
         $pengkajian->volurine            = $request->volurine;
         $pengkajian->bab                 = $request->bab;
-        $pengkajian->konsistensi         = $request->konsistensi;
+        // $pengkajian->konsistensi         = $request->konsistensi;
+        if(isset($request->konsistensi)){
+            $pengkajian->konsistensi     = implode(',' , $request->konsistensi);
+        }
+        
         $pengkajian->kelbab              = $request->kelbab;
 
         if(isset($request->bablain)){

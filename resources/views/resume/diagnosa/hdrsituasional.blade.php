@@ -1,7 +1,7 @@
 <div class="col-md-12">
     <h3>Diagnosis keperawatan </h3>
     <br>
-    <h4 style="color:red"><b>Risiko</b></h4>
+    <h4 style="color:red"><b>HDR Situasional</b></h4>
     <b>b.d </b> Perubahan pada
     citra tubuh
     , Perubahan peran
